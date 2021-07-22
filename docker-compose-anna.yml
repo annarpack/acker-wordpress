@@ -1,0 +1,58 @@
+version: '2.2'
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: docker/MySQL/Dockerfile
+    container_name: wordpress_db
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/MySQL/my.cnf.docker:/etc/mysql/my.cnf
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    ports:
+      - "8082:3306"
+    cpu_shares: 100
+    cpus: 4
+    cpuset: 0,1,2,3
+    mem_swappiness: 1
+    mem_limit: 12g
+    memswap_limit: 16g
+    mem_reservation: 1024m
+    privileged: true
+    shm_size: 2g
+  wordpress:
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: docker/WordPress/Dockerfile
+    container_name: wordpress
+    ports:
+      - "8000:80"
+    restart: always
+    volumes:
+      - ./docker/WordPress/info.php:/var/www/html/info.php
+      - ./:/var/www/html
+      - ../Acker.Database.AckerWordPress.Development/:/var/www/Acker.Database.AckerWordPress.Development
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    cpu_shares: 80
+    cpus: 2
+    cpuset: 0,1
+    mem_swappiness: 1
+    mem_limit: 8g
+    memswap_limit: 16g
+    mem_reservation: 1024m
+    privileged: true
+    shm_size: 2g
+volumes:
+  db_data: {}

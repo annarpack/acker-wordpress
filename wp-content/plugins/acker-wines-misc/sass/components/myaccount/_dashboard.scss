@@ -1,0 +1,49 @@
+/* Don't show user profile */
+.user-profile {
+    display: none;
+}
+
+/*------------------------------------*
+	MY DASHBOARD
+*------------------------------------*/
+
+#my-dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 500px;
+}
+#my-dashboard section {
+  width: 48%;
+  flex-direction: column;
+
+  @include media('mobile'){
+      width: 100%;
+      flex-direction: row;
+  }
+  @include media('tablet'){
+      width: 48%;
+      flex-direction: column;
+  }
+}
+#my-dashboard section h5 {
+  clear: both;
+  width: 100%;
+  padding-top: 1em;
+  font-size: 16px;
+}
+#my-dashboard section #dashboard-recent-orders table {
+  width: 100%;
+  min-width: 80vw;
+}
+#my-dashboard section:nth-child(2) {
+  clear: right;
+}
+#my-dashboard section:nth-child(3) {
+  clear: left;
+}
+#my-dashboard section:nth-child(5) {
+  width: 100%;
+  min-width: 80vw;
+  min-width: 100%;
+}

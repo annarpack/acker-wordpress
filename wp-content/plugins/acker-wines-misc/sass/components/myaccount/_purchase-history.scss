@@ -1,0 +1,297 @@
+/*------------------------------------*
+	MY ACCOUNT
+*------------------------------------*/
+
+.woocommerce {
+    #my-account-menu {
+        float:left;
+        width: 30 vw;
+        max-width:30%;
+        display: table;
+
+        &.yith-wcmap.position-left {
+          display: table;
+
+          li {
+            /*
+            //:::: WITHOUT YITH STYLE SHEET:::
+            */
+            // border-bottom: 1px solid #CCC;
+            // margin-top: 1em;
+            // margin-bottom: 1em;
+            // border-right: 0px;
+            // border-left: 0px;
+            // padding: 1em;
+
+            /*
+            //:::: WITH YITH STYLE SHEET:::
+            */
+            border-bottom: 0;
+            border: 0;
+
+
+            a {
+              padding-right: 0.8em;
+              text-align: center;
+
+              .fa {
+                padding: 0.4em;
+                float: right;
+              }
+            }
+          }
+
+          @include media('mobile'){
+                float: none;
+                width: 100%;
+          }
+          @include media('tablet'){
+                float: none;
+                width: 18%;
+          }
+          @include media('desktop'){
+                float: left;
+                width: 24%;
+          }
+          @include media('wide'){
+                float: left;
+                width: 20%;
+
+          }
+        }
+    }
+    .woocommerce-MyAccount-content {
+        font-size: 12px;
+        // margin-left: 4%;
+    }
+
+    #filtered-content{
+        font-size: 12px;
+        width: 100%;
+
+        h1 {
+            text-align: left;
+        }
+
+        .dataTables_wrapper {
+            font-size: 12px;
+            width: 100%;
+
+
+            .dataTables_filter {
+                margin-bottom: 1em;
+                margin-top: -50px;
+                table {
+                     border-width: 0;
+                }
+            }
+            table {
+                font-size: 14px;
+                 border-width: 0;
+                border-right: 0px;
+                border-left: 0px;
+                th {
+                    font-size: 14px;
+                }
+                td {
+                    font-size: 12px;
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .dataTables_scroll {
+                font-size: 12px;
+                table thead {
+                    background-color: #6f263d;
+                    tr {
+                       border-right: 0px;
+                       border-left: 0px;
+                       th {
+                       color: #fff;
+                        }
+                    }
+                }
+            }
+
+        }
+
+       // @include media('mobile'){
+       //       width: 100%;
+       // }
+       // @include media('tablet'){
+       //       width: 80%;
+       // }
+       // @include media('desktop'){
+       //       width: 76%;
+       // }
+       // @include media('wide'){
+       //       width: 74%;
+       //
+       // }
+
+
+
+    }
+}
+
+/*------------------------------------*
+	MY ACCOUNT TABS
+*------------------------------------*/
+#purchase-history-filter-buttons-section {
+    margin: 0 auto;
+    border-bottom: 2px solid #CCC;
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 8px 0px;
+    /* margin-bottom: -4px; */
+
+    &.tabs {
+        height: 32px;
+        clear: both;
+        margin: 25px 0;
+
+        .tab {
+            min-height: 20px;
+            display: inline;
+            padding: 6px 8px 6px 8px;
+
+            input[type=radio] {
+
+            }
+            input[type=radio]:checked {
+                background: white;
+                border-bottom: 2px solid white;
+                z-index: 2;
+            }
+            label {
+                background: #eee;
+                color: #000;
+                padding: 6px 8px 6px 8px;
+                border: 1px solid #ccc;
+                //margin-left: -1px;
+                position: relative;
+                //left: 1px;
+                margin-right: 2px;
+                // border-left: 1px solid #CCC;
+                // border-right: 1px solid #CCC;
+                // border-top: 1px solid #CCC;
+                // border-bottom: 2px solid #CCC;
+
+                &:hover {
+                    color: #6f263d;
+                }
+
+                &.filter-not-selected {
+                   background: #eee;
+                }
+                &.filter-selected {
+                   background: white;
+                   border-bottom: 2px solid white;
+                   z-index: 2;
+                }
+            }
+        }
+  }
+
+  &:after {
+      margin-bottom: 15px;
+      clear:both;
+      height: 15px;
+      display: block;
+      float: none;
+  }
+}
+
+/*------------------------------------*
+	MY ACCOUNT FILTERS
+*------------------------------------*/
+
+// button.filter-button {
+//     background: #eee;
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     //margin-left: -1px;
+//     margin-right: 16px;
+//     position: relative;
+//     left: 1px;
+//     appearance: button;
+//     -webkit-appearance: button;
+//     -moz-appearance: button;
+//
+//     &.filter-not-selected {
+//         background: #eee;
+//         padding: 10px;
+//
+//
+//         border-left: 1px solid #CCC;
+//        border-right: 1px solid #CCC;
+//        border-top: 1px solid #CCC;
+//
+//        a {
+//            color: #000;
+//            appearance: button;
+//            -webkit-appearance: button;
+//            -moz-appearance: button;
+//            &:hover {
+//                color: #6f263d;
+//            }
+//        }
+//
+//     }
+//
+//     &.filter-selected {
+//         background: white;
+//         border-bottom: 1px solid white;
+//         z-index: 2;
+//
+//         // background-color: #6f263d;
+//         // color: #FFF;
+//         //border-bottom: 6px solid #6f263d;
+//         a {
+//             //color: #FFF;
+//
+//             &:hover {
+//                 color: #6f263d;
+//             }
+//         }
+//     }
+// }
+
+// #purchase-history-filter-buttons-section {
+//     margin: 0 auto;
+//     border-bottom: 2px solid #CCC;
+//     /* position: absolute;
+//     display: inline; */
+//     width: 100%;
+//     padding: 0 2px 0 4px;
+//     /* margin-bottom: -4px; */
+//
+//     &.tabs {
+//
+//
+//         button.filter-buttons {
+//             margin: 0 auto;
+//             position: relative;
+//             border-left: 1px solid #CCC;
+//             border-right: 1px solid #CCC;
+//             border-top: 1px solid #CCC;
+//             margin-bottom: -2px;
+//             padding: 0.8em;
+//
+//         }
+//         .filter-not-selected {
+//             background-color: #FFF;
+//             color: #000;
+//             border-bottom: 2px solid #FFF;
+//         }
+//
+//         .filter-selected {
+//             background-color: #6f263d;
+//             color: #FFF;
+//             border-bottom: 6px solid #6f263d;
+//         }
+//     }
+// }

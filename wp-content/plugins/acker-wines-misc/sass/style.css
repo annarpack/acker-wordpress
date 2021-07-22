@@ -1,0 +1,742 @@
+/*!
+ * Plugin Name: 	AW Custom Styles - Anna
+ * Base Theme:      OceanWP
+ * Author: 			Anna
+ * Description: 	OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful & professional design. Very fast, responsive, RTL & translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet & mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor & WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+ * Version: 		1.6.4
+ * Tags: 			two-columns, right-sidebar, footer-widgets, blog, news, custom-background, custom-menu, post-formats, rtl-language-support, sticky-post, editor-style, threaded-comments, translation-ready, buddypress, custom-colors, featured-images, full-width-template, theme-options, e-commerce
+ * Text Domain: 	oceanwp
+ *
+ * License: GNU General Public License v3.0 or later
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * DO NOT ADD YOUR CSS TO THIS FILE - IT WILL BE LOST
+ * To add your own CSS, use a child theme: https://github.com/oceanwp/oceanwp-child-theme
+ *
+ * CSS file is in "assets/css"
+ */
+/*------------------------------------*
+    $CONTENTS
+*------------------------------------*/
+/**
+ * BASE
+ * - MAIN
+ * - NORMALIZE
+ * - LAYOUTS
+ * - COMPONENTS
+ * - TYPOGRAPHY
+ * - FORMS
+ *
+ * COMPONENTS
+ * - TOP BAR
+ * - HEADER
+ * - NAVIGATIONS
+ * - LINKS EFFECT
+ * - MEGA MENU
+ * - SEARCH ICON
+ * - DROP DOWN MOBILE
+ * - FULL SCREEN MOBILE
+ * - PAGE HEADER
+ * - BLOG
+ * - SIDEBAR
+ * - CUSTOM SELECTS
+ * - PAGINATION
+ * - COMMENT
+ * - SEARCH
+ * - FOOTER
+ * - 404 PAGE
+ *
+ * PLUGINS
+ * - GENERAL
+ * - MAGNIFIC POPUP
+ * - SIDR
+ * - SLICK
+ *
+ * RESPONSIVE
+ */
+/*------------------------------------*
+	$MAIN
+*------------------------------------*/
+/*------------------------------------*
+	$NORMALIZE
+*------------------------------------*/
+/*------------------------------------*
+	$LAYOUTS
+*------------------------------------*/
+/*------------------------------------*
+	$COMPONENTS
+*------------------------------------*/
+/*------------------------------------*
+	$TYPOGRAPHY
+*------------------------------------*/
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir/Avenir-Roman-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Avenir/Avenir-Roman-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Avenir/Avenir-Roman-webfont.woff") format("woff"), url("fonts/Avenir/Avenir-Roman-webfont.ttf") format("truetype"), url("fonts/Avenir/Avenir-Roman-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("fonts/Avenir/avenir-heavy-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Avenir/avenir-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Avenir/avenir-heavy-webfont.woff") format("woff"), url("fonts/Avenir/avenir-heavy-webfont.ttf") format("truetype"), url("fonts/Avenir/avenir-heavy-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("fonts/Avenir/Avenir-Roman-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Avenir/Avenir-Roman-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Avenir/Avenir-Roman-webfont.woff") format("woff"), url("fonts/Avenir/Avenir-Roman-webfont.ttf") format("truetype"), url("fonts/Avenir/Avenir-Roman-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Avenir Book";
+  src: url("fonts/Avenir/avenir-book.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Avenir/avenir-book.eot?#iefix") format("embedded-opentype"), url("fonts/Avenir/avenir-book.woff") format("woff"), url("fonts/Avenir/avenir-book.ttf") format("truetype"), url("fonts/Avenir/avenir-book.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+/*------------------------------------*
+	$FORMS
+*------------------------------------*/
+/*------------------------------------*
+	$TOP BAR
+*------------------------------------*/
+.menu-top-menu-container {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #212121;
+  position: absolute;
+  height: 24px;
+  z-index: 300; }
+  .menu-top-menu-container ul#menu-top-menu {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    float: right;
+    right: 200px;
+    left: 77vw;
+    right: 150px; }
+    .menu-top-menu-container ul#menu-top-menu li.menu-item.menu-item-object-custom {
+      text-decoration: none;
+      list-style: none;
+      position: relative;
+      min-width: 150px; }
+      .menu-top-menu-container ul#menu-top-menu li.menu-item.menu-item-object-custom a {
+        color: #FFF; }
+      .menu-top-menu-container ul#menu-top-menu li.menu-item.menu-item-object-custom ul.sub-menu {
+        margin: 0 auto;
+        padding: 0;
+        background-color: #212121;
+        z-index: 300;
+        width: 145px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: 140px; }
+        .menu-top-menu-container ul#menu-top-menu li.menu-item.menu-item-object-custom ul.sub-menu li.menu-item.menu-item-object-custom {
+          position: relative;
+          text-decoration: none;
+          list-style: none; }
+          .menu-top-menu-container ul#menu-top-menu li.menu-item.menu-item-object-custom ul.sub-menu li.menu-item.menu-item-object-custom a {
+            padding: 0.8em;
+            color: #FFF; }
+
+.site-breadcrumbs {
+  position: absolute;
+  right: 80%;
+  left: 0; }
+
+/*------------------------------------*
+	$HEADER
+*------------------------------------*/
+/*------------------------------------*
+	$NAVIGATIONS
+*------------------------------------*/
+/*------------------------------------*
+	$SEARCH
+*------------------------------------*/
+/*------------------------------------*
+	SEARCH FORM
+*------------------------------------*/
+#main {
+  z-index: 1; }
+
+#searchform-container {
+  font-family: "Avenir";
+  display: block;
+  position: absolute;
+  width: 400px;
+  top: 0;
+  height: 28px;
+  right: 150px; }
+  #searchform-container form#aw-searchform {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: auto;
+    padding: 0; }
+    #searchform-container form#aw-searchform input#s[type="text"] {
+      z-index: 2;
+      margin: 0 auto;
+      position: absolute;
+      flex-direction: row;
+      font-size: 16px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 0;
+      width: 72%;
+      min-height: 20px;
+      height: 28px;
+      padding: 0;
+      padding-left: 18px;
+      left: 112px;
+      /* -webkit-appearance: searchfield;
+      -moz-appearance: searchfield; */
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "Avenir";
+      color: #000;
+      letter-spacing: 1.25px;
+      border-radius: 0;
+      background-color: #f2f2f2;
+      border: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 14px;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 14px; }
+    #searchform-container form#aw-searchform select#search-filter-options {
+      z-index: 1;
+      position: absolute;
+      background-color: transparent;
+      width: auto;
+      min-width: 100px;
+      height: 28px;
+      min-height: 20px;
+      padding: 0.5px 15px 0 30px;
+      text-align: center;
+      -webkit-text-align: center;
+      -moz-text-align: center;
+      color: #7a7a7a;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1.25px;
+      background-color: transparent;
+      border: 0;
+      border-top-left-radius: 14px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 0;
+      /* text-shadow: 0.25px 0.25px #555555; */
+      appearance: menulist-button;
+      -webkit-appearance: menulist-button;
+      -moz-appearance: menulist-button; }
+      #searchform-container form#aw-searchform select#search-filter-options option.filter-button {
+        display: block;
+        z-index: 2;
+        width: auto;
+        min-width: 100px;
+        text-align: center;
+        /* background-color: transparent; */
+        /* appearance: menulist-button;
+        -webkit-appearance: menulist-button;
+        -moz-appearance: menulist-button; */
+        background-color: #f2f2f2;
+        color: #7a7a7a;
+        border-radius: 3px;
+        font-size: 16px; }
+  #searchform-container #searchform-filter-button span {
+    z-index: -2;
+    float: left;
+    cursor: default;
+    overflow: hidden;
+    float: left;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    width: auto;
+    min-width: 112px;
+    height: 28px;
+    min-height: 20px;
+    padding: 0.5px 15px 0 30px;
+    text-align: center;
+    -webkit-text-align: center;
+    -moz-text-align: center;
+    opacity: 1;
+    color: #7a7a7a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    background-image: linear-gradient(#e1e1e1, #cccccc);
+    background-color: #e6e6e6;
+    border: 0;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 0; }
+  #searchform-container #searchform-filter-button i.search-icon {
+    position: absolute;
+    display: block; }
+    #searchform-container #searchform-filter-button i.search-icon svg {
+      opacity: 1;
+      z-index: -1;
+      position: absolute;
+      top: 1px;
+      left: 8px;
+      width: 14px;
+      height: 28px;
+      background: transparent;
+      border: 0;
+      fill: #7a7a7a;
+      appearance: menuarrow;
+      -webkit-appearance: menuarrow;
+      -moz-appearance: menuarrow; }
+  #searchform-container #searchform-submit {
+    position: relative;
+    float: right;
+    /* right: 202px; */
+    right: 0;
+    height: 28px;
+    width: 30px;
+    background-image: linear-gradient(#e1e1e1, #cccccc);
+    background-color: #e6e6e6;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 14px; }
+    #searchform-container #searchform-submit svg#search-icon,
+    #searchform-container #searchform-submit svg#dropdown-loading {
+      position: relative;
+      top: 5px;
+      left: 6px;
+      background: none;
+      height: 18px;
+      width: 17px;
+      background: transparent;
+      fill: #7a7a7a;
+      background: transparent; }
+
+.search-results #page-loading {
+  max-height: 100px; }
+
+/*------------------------------------*
+	CUSTOMIZER CODE
+*------------------------------------*/
+/* #searchform-container form#aw-searchform input#s[type="text"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: avenir;
+    margin: 0 auto;
+    padding-left: 1em;
+
+    border-radius: 0;
+    background-color: transparent;
+    border-right: 0;
+    border-left: 0;
+    border-top: 1px solid #782942;
+    border-bottom: 1px solid #782942;
+}
+
+#searchform-container select#search-filter-options {
+    color:#C2C2C2;
+    font-weight: 600;
+    background-image: linear-gradient(rgb(179, 67, 85), rgb(131, 12, 32));
+    background-color: #782942;
+    border: 2px solid  #a2284e;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    text-shadow: 0.25px 0.25px #555555;
+}
+form#aw-searchform select#search-filter-options option.filter-button {
+    background-color: #782942;
+    color: #FFF;
+    border-radius: 3px;
+}
+form#aw-searchform select#search-filter-options option.filter-button[status="selected"] {
+
+}
+
+#searchform-container #searchform-submit svg {
+    fill: #C2C2C2;
+    background: transparent;
+}
+
+#searchform-container #searchform-submit {
+    background-image: linear-gradient(rgb(179, 67, 85), rgb(131, 12, 32));
+    background-color: #782942;
+    border: 2px solid  #a2284e;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 3px;
+}
+
+#searchform-container svg#searchform-filter-button {
+    fill: #C2C2C2;
+    color: #fff;
+    border-color: #FFF;
+} */
+/*------------------------------------*
+	SEARCH FROM DROPDOWN
+*------------------------------------*/
+#searchform-dropdown-wrapper {
+  display: none;
+  /* display: block; */
+  position: absolute;
+  float: left;
+  z-index: 20;
+  clear: both;
+  height: auto;
+  width: auto;
+  min-width: 425px;
+  min-height: 332px;
+  top: 113px;
+  color: #FFF;
+  overflow-y: hidden;
+  /* left: 244px;*/
+  /* left: calc(20% + 46px); */
+  left: 20%;
+  top: 78px; }
+  #searchform-dropdown-wrapper #searchform-results-dropdown {
+    height: auto;
+    width: auto;
+    display: flex;
+    max-width: 380px;
+    max-height: 332px;
+    min-height: 100px;
+    min-width: 180px;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden; }
+    #searchform-dropdown-wrapper #searchform-results-dropdown #searchform-results-content {
+      /* display: block; */
+      height: auto;
+      width: auto;
+      max-width: 380px;
+      max-height: 332px;
+      min-height: 100px;
+      min-width: 180px;
+      padding: 1em;
+      background-color: #FFF;
+      border: 6px solid #CCC;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px; }
+    #searchform-dropdown-wrapper #searchform-results-dropdown h3.results {
+      color: #666;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      display: block;
+      clear: both;
+      width: 100%;
+      margin-bottom: 4px; }
+    #searchform-dropdown-wrapper #searchform-results-dropdown ul li,
+    #searchform-dropdown-wrapper #searchform-results-dropdown ul li a {
+      color: #666;
+      list-style: none;
+      text-decoration: none; }
+    #searchform-dropdown-wrapper #searchform-results-dropdown ul li a:hover {
+      text-decoration: underline; }
+    #searchform-dropdown-wrapper #searchform-results-dropdown #search-results h3,
+    #searchform-dropdown-wrapper #searchform-results-dropdown #searchform-dropdown-wrapper #searchform-results-dropdown #search-results ul {
+      margin: 0; }
+
+#no-cat-err, #search-err {
+  color: #6f263d; }
+
+/*------------------------------------*
+	SEARCH RESULTS PAGE
+*------------------------------------*/
+body.search-results #searchpage-results-content h1 {
+  position: relative;
+  display: block; }
+body.search-results #searchpage-results-content svg {
+  clear: both;
+  display: block; }
+body.search-results #searchpage-results-content section {
+  display: flex;
+  flex-direction: column; }
+  body.search-results #searchpage-results-content section article {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    body.search-results #searchpage-results-content section article .search-entry-content {
+      flex-direction: row;
+      width: 100%; }
+    body.search-results #searchpage-results-content section article .search-entry-summary {
+      float: none;
+      width: 100%; }
+    body.search-results #searchpage-results-content section article .has-thumb.search-entry-summary {
+      width: 76%;
+      flex-direction: column;
+      float: right; }
+    body.search-results #searchpage-results-content section article .thumbnail {
+      width: 20%;
+      min-width: 150px;
+      min-height: 150px;
+      flex-direction: column;
+      float: left; }
+
+/*------------------------------------*
+	$MY ACCOUNT
+*------------------------------------*/
+/*------------------------------------*
+	PHONE NUMBERS
+*------------------------------------*/
+.woocommerce_edit_account_form.aw-custom-phone-numbers legend {
+  font-size: 17px; }
+.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr {
+  border: 0;
+  border-bottom: 0; }
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    border: 0;
+    border-bottom: 0; }
+    .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td {
+      border: 0;
+      border-bottom: 0; }
+    .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row th {
+      border: 0;
+      border-bottom: 0; }
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr td span {
+    border: 0; }
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr th {
+    border: 0;
+    border-bottom: 0; }
+@media only screen and (min-width: 600px) {
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr,
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    float: none;
+    width: 100%; } }
+@media only screen and (min-width: 768px) {
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr,
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row; } }
+@media only screen and (min-width: 1168px) {
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr,
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row; } }
+@media only screen and (min-width: 600px) {
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account {
+    display: flex;
+    flex-direction: column; } }
+@media only screen and (min-width: 768px) {
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account {
+    width: 100%; } }
+@media only screen and (min-width: 1168px) {
+  .woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account {
+    width: 100%; } }
+
+/* Don't show user profile */
+.user-profile {
+  display: none; }
+
+/*------------------------------------*
+	MY DASHBOARD
+*------------------------------------*/
+#my-dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 500px; }
+
+#my-dashboard section {
+  width: 48%;
+  flex-direction: column; }
+  @media only screen and (min-width: 600px) {
+    #my-dashboard section {
+      width: 100%;
+      flex-direction: row; } }
+  @media only screen and (min-width: 768px) {
+    #my-dashboard section {
+      width: 48%;
+      flex-direction: column; } }
+
+#my-dashboard section h5 {
+  clear: both;
+  width: 100%;
+  padding-top: 1em;
+  font-size: 16px; }
+
+#my-dashboard section #dashboard-recent-orders table {
+  width: 100%;
+  min-width: 80vw; }
+
+#my-dashboard section:nth-child(2) {
+  clear: right; }
+
+#my-dashboard section:nth-child(3) {
+  clear: left; }
+
+#my-dashboard section:nth-child(5) {
+  width: 100%;
+  min-width: 80vw;
+  min-width: 100%; }
+
+/*------------------------------------*
+	MY ACCOUNT
+*------------------------------------*/
+.woocommerce #my-account-menu {
+  float: left;
+  width: 30 vw;
+  max-width: 30%;
+  display: table; }
+  .woocommerce #my-account-menu.yith-wcmap.position-left {
+    display: table; }
+    .woocommerce #my-account-menu.yith-wcmap.position-left li {
+      /*
+      //:::: WITHOUT YITH STYLE SHEET:::
+      */
+      /*
+      //:::: WITH YITH STYLE SHEET:::
+      */
+      border-bottom: 0;
+      border: 0; }
+      .woocommerce #my-account-menu.yith-wcmap.position-left li a {
+        padding-right: 0.8em;
+        text-align: center; }
+        .woocommerce #my-account-menu.yith-wcmap.position-left li a .fa {
+          padding: 0.4em;
+          float: right; }
+    @media only screen and (min-width: 600px) {
+      .woocommerce #my-account-menu.yith-wcmap.position-left {
+        float: none;
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      .woocommerce #my-account-menu.yith-wcmap.position-left {
+        float: none;
+        width: 18%; } }
+    @media only screen and (min-width: 1168px) {
+      .woocommerce #my-account-menu.yith-wcmap.position-left {
+        float: left;
+        width: 24%; } }
+    @media only screen and (min-width: 1379px) {
+      .woocommerce #my-account-menu.yith-wcmap.position-left {
+        float: left;
+        width: 20%; } }
+.woocommerce .woocommerce-MyAccount-content {
+  font-size: 12px; }
+.woocommerce #filtered-content {
+  font-size: 12px;
+  width: 100%; }
+  .woocommerce #filtered-content h1 {
+    text-align: left; }
+  .woocommerce #filtered-content .dataTables_wrapper {
+    font-size: 12px;
+    width: 100%; }
+    .woocommerce #filtered-content .dataTables_wrapper .dataTables_filter {
+      margin-bottom: 1em;
+      margin-top: -50px; }
+      .woocommerce #filtered-content .dataTables_wrapper .dataTables_filter table {
+        border-width: 0; }
+    .woocommerce #filtered-content .dataTables_wrapper table {
+      font-size: 14px;
+      border-width: 0;
+      border-right: 0px;
+      border-left: 0px; }
+      .woocommerce #filtered-content .dataTables_wrapper table th {
+        font-size: 14px; }
+      .woocommerce #filtered-content .dataTables_wrapper table td {
+        font-size: 12px; }
+        .woocommerce #filtered-content .dataTables_wrapper table td span {
+          font-size: 12px; }
+    .woocommerce #filtered-content .dataTables_wrapper .dataTables_scroll {
+      font-size: 12px; }
+      .woocommerce #filtered-content .dataTables_wrapper .dataTables_scroll table thead {
+        background-color: #6f263d; }
+        .woocommerce #filtered-content .dataTables_wrapper .dataTables_scroll table thead tr {
+          border-right: 0px;
+          border-left: 0px; }
+          .woocommerce #filtered-content .dataTables_wrapper .dataTables_scroll table thead tr th {
+            color: #fff; }
+
+/*------------------------------------*
+	MY ACCOUNT TABS
+*------------------------------------*/
+#purchase-history-filter-buttons-section {
+  margin: 0 auto;
+  border-bottom: 2px solid #CCC;
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  padding: 0px 0px 8px 0px;
+  /* margin-bottom: -4px; */ }
+  #purchase-history-filter-buttons-section.tabs {
+    height: 32px;
+    clear: both;
+    margin: 25px 0; }
+    #purchase-history-filter-buttons-section.tabs .tab {
+      min-height: 20px;
+      display: inline;
+      padding: 6px 8px 6px 8px; }
+      #purchase-history-filter-buttons-section.tabs .tab input[type=radio]:checked {
+        background: white;
+        border-bottom: 2px solid white;
+        z-index: 2; }
+      #purchase-history-filter-buttons-section.tabs .tab label {
+        background: #eee;
+        color: #000;
+        padding: 6px 8px 6px 8px;
+        border: 1px solid #ccc;
+        position: relative;
+        margin-right: 2px; }
+        #purchase-history-filter-buttons-section.tabs .tab label:hover {
+          color: #6f263d; }
+        #purchase-history-filter-buttons-section.tabs .tab label.filter-not-selected {
+          background: #eee; }
+        #purchase-history-filter-buttons-section.tabs .tab label.filter-selected {
+          background: white;
+          border-bottom: 2px solid white;
+          z-index: 2; }
+  #purchase-history-filter-buttons-section:after {
+    margin-bottom: 15px;
+    clear: both;
+    height: 15px;
+    display: block;
+    float: none; }
+
+/*------------------------------------*
+	MY ACCOUNT FILTERS
+*------------------------------------*/
+/*------------------------------------*
+	$LINKS EFFECT
+*------------------------------------*/
+/*------------------------------------*
+	$MEGA MENU
+*------------------------------------*/
+/*------------------------------------*
+	$DROP DOWN MOBILE
+*------------------------------------*/
+/*------------------------------------*
+	$FULL SCREEN MOBILE
+*------------------------------------*/
+/*------------------------------------*
+	$PAGE HEADER
+*------------------------------------*/
+/*------------------------------------*
+	$BLOG
+*------------------------------------*/
+/*------------------------------------*
+	$SIDEBAR
+*------------------------------------*/
+/*------------------------------------*
+	$FOOTER
+*------------------------------------*/
+/*------------------------------------*
+	$RESPONSIVE
+*------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
