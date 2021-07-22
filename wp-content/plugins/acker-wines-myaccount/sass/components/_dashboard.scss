@@ -1,0 +1,177 @@
+/*------------------------------------*
+	MY DASHBOARD
+*------------------------------------*/
+.amount,
+.woocommerce-Price-amount.amount {
+	color: #03930f;
+}
+
+#aw-my-dashboard {
+	h1 {
+		clear: both;
+		float: none;
+		margin-bottom: 4px;
+	}
+	p {
+		margin: 0;
+	}
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // flex-basis: 500px;
+
+	h5 {
+		color: $acker-red-3;
+	  clear: both;
+	  width: 100%;
+	  padding-top: 1em;
+	  font-size: 16px;
+		margin-top: 10px;
+		:not(:first-child){
+			margin-top: 30px;
+		}
+	}
+	table.aw_dashboard {
+		width: 100%;
+		border: 0;
+		margin-bottom: 30px;
+		thead {
+			background-color: #FFF;
+			border-bottom: 1px solid $acker-black;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+		td {
+			border: 0;
+		}
+		.button {
+			//padding: 8px 6px;
+		}
+	}
+	// 	&.half-width {
+	// 		width: 48%;
+	//
+	// 		@include media('mobile'){
+	// 				width: 100%;
+	// 				flex-direction: row;
+	// 		}
+	// 		@include media('tablet'){
+	// 				width: 48%;
+	// 				flex-direction: column;
+	// 		}
+	// 	}
+	// }
+	// &.half-width {
+	// 	width: 48%;
+	//
+	// 	@include media('mobile'){
+	// 			width: 100%;
+	// 			flex-direction: row;
+	// 	}
+	// 	@include media('tablet'){
+	// 			width: 48%;
+	// 			flex-direction: column;
+	// 	}
+	// }
+	// &:nth-child(2) {
+	// 	clear: right;
+	// }
+	// &:nth-child(3) {
+	// 	clear: left;
+	// }
+	// &:nth-child(5) {
+	// 	width: 100%;
+	// 	min-width: 80vw;
+	// 	min-width: 100%;
+	// }
+
+	@include media('mobile'){
+			width: 100%;
+			float: none;
+	}
+	@include media('tablet'){
+			width: 100%;
+			float: none;
+	}
+	@include media('desktop'){
+			width: 100%;
+			float: left;
+	}
+	@include media('wide'){
+		width: 100%;
+		float: left;
+	}
+	#dashboard-vue-root {
+		@include media('mobile'){
+			width: 100%;
+			float: none;
+		}
+		@include media('tablet'){
+			width: 100%;
+		}
+		@include media('desktop'){
+			width: 100%;
+		}
+		@include media('wide'){
+			width: 100%;
+		}
+	}
+}
+/*------------------------------------*
+	NOTIFICATIONS
+*------------------------------------*/
+.woocommerce {
+		#aw-myaccount-notifications {
+			p {
+				text-align: center;
+				margin: 0 auto;
+				padding: 10px;
+				width: 100%;
+				border-bottom: 2px solid $acker-grey-2;
+				color: $acker-red-1;
+				&:nth-child(1){
+					border-top: 2px solid $acker-grey-2;
+				}
+				&:nth-child(odd){
+					background-color: $acker-grey-1;
+				}
+				&:nth-child(even){
+					background-color: #FFF;
+				}
+			}
+		}
+}
+
+#aw-myaccount-name {
+	text-align: center;
+	margin-bottom: 10px;
+	h1 {
+		text-transform: uppercase;
+		font-weight: 10;
+		letter-spacing: 4px;
+		margin: 0 auto;
+	}
+	p {
+		margin: 0 auto;
+		font-size: 12px;
+		a {
+
+		}
+	}
+}
+
+#aw-dashboard-all-complete {
+	display: none;
+}
+.appraisal-submit-button-dashboard {
+	#appraisal-submit-button {
+		font-size: 16px;
+	}
+	#appraisal-submit-form {
+		font-size: 14px;
+		display: none;
+	}
+	.wpcf7-file, input {
+		border: 0;
+	}
+}

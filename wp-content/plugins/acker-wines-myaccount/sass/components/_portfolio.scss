@@ -1,0 +1,496 @@
+
+
+.woocommerce {
+    .woocommerce-MyAccount-content {
+				//min-width: 1000px;
+				font-size: 12px;
+        // margin-left: 4%;
+		    #filtered-content{
+		        font-size: 12px;
+		        width: 100%;
+				}
+        h1 {
+            text-align: left;
+						font-size: 14px;
+						color: $acker-red-3;
+        }
+			#my-wines-vue-root,
+			#my-wines-appraisal-table {
+				.dataTables_wrapper {
+					font-size: 12px;
+					//width: 100%;
+					border: 0;
+					.dataTables_filter {
+						margin: 0 auto;
+						text-align: center;
+						margin-bottom: 1em;
+						margin-top: -40px;
+						z-index: 1;
+							table {
+									border-width: 0;
+							}
+							label {
+								font-size: 13px;
+								font-weight: 600;
+							}
+							input {
+								min-height: 30px;
+								height: 30px;
+								//margin-right: 154px;
+							}
+					}
+					table {
+							font-size: 12px;
+							border-width: 0;
+							border-right: 0px;
+							border-left: 0px;
+							th {
+									font-size: 12px;
+									font-weight: 100;
+							}
+							td {
+									font-size: 12px;
+									span {
+											font-size: 12px;
+									}
+
+							}
+					}
+					.dataTables_scroll {
+						width: 100%;
+						.dataTables_scrollHead {
+							font-size: 12px;
+							table {
+								thead {
+									//background-color: #6f263d;
+									background-color: #FFF;
+									border-bottom: 1px solid #000;
+									tr {
+										border-right: 0px;
+										border-left: 0px;
+										border-bottom: 1px solid #000;
+											th {
+												font-size: 12px;
+												font-weight: 100;
+												//max-width: 25px;
+												color: #000;
+												border-bottom: 1px solid #000;
+												&.aw-wine-button {
+													width: 25px;
+												}
+											}
+									}
+								}
+							}
+						}
+						.dataTables_scrollBody {
+							border-bottom:0;
+							table {
+								tbody {
+									tr {
+										td {
+											border-color: #FFF;
+											&:last-child {
+												text-align: center;
+												margin: 0 auto;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.dataTables_info {
+						float: right;
+					}
+				&#aw-my-wines-table_wrapper,
+				&#aw-appraisal-table_wrapper {
+					thead tr th,
+					tbody tr td {
+						padding: 8px 16px;
+						&:nth-child(1){
+							min-width: 60px;
+							max-width: 70px;
+						}
+						&:nth-child(2){
+							min-width: 68px;
+							max-width: 75px;
+						}
+						&:nth-child(3){
+							min-width: 75px;
+							max-width: 80px;
+							text-align: center;
+							a {
+								color: #000;
+							}
+						}
+						&:nth-child(4){
+							max-width: 16px;
+						}
+						&:nth-child(5){
+							max-width: 24px;
+						}
+						&:nth-child(7){
+							min-width: 50px;
+							max-width: 200px;
+						}
+					}
+				}
+			}
+		}
+
+		#my-wines-charts {
+			display: none;
+			width: 100%;
+			//min-height: 960px;
+			//width: 1200px;
+			margin-bottom: 12px;
+			background-color: #f7f7f7;
+			background: #f7f7f7;
+
+			#my-wines-chart-region,
+			#my-wines-chart-vintage,
+			#my-wines-chart-producer,
+			#my-wines-chart-format {
+				display: block;
+				// flex-direction: row;
+				// flex-wrap: wrap;
+				// flex-flow: row wrap;
+
+				background-color: #f7f7f7;
+				background: #f7f7f7;
+				border: 1px solid #CCC;
+				padding-right: 10px;
+				margin-bottom: 20px;
+
+
+				@include media('mobile'){
+							width: 100%;
+							min-width: 200px;
+				}
+				@include media('tablet'){
+							width: 100%;
+							min-width: 386px;
+							//min-height: 400px;
+							max-height: 500px;
+
+				}
+				@include media('desktop'){
+							width: 48%;
+							min-width: 386px;
+							//min-height: 400px;
+							max-height: 500px;
+							&:nth-child(2){
+								clear:right;
+							}
+							&:nth-child(odd){
+								clear: left;
+								float: left;
+							}
+							&:nth-child(even){
+								clear: right;
+								float: right;
+							}
+				}
+				@include media('wide'){
+							width: 49%;
+							min-width: 400px;
+							//min-height: 400px;
+							max-height: 500px;
+							&:nth-child(2){
+								clear:right;
+							}
+							&:nth-child(odd){
+								clear: left;
+								float: left;
+							}
+							&:nth-child(even){
+								clear: right;
+								float: right;
+							}
+				}
+
+			}
+		}
+
+		#my-wines-vue-root {
+			clear: both;
+			display: block;
+		}
+
+		#aw-mywines-filters-section {
+				margin: 0 auto;
+				border: 0;
+				width: 100%;
+				//display: inline-flex;
+				display: none;
+				flex-direction: row;
+				position: relative;
+				//float: left;
+				//padding: 0px 0px 8px 0px;
+				/* margin-bottom: -4px; */
+				font-size: 14px;
+				height: 25px;
+				//height: 0;
+				clear: both;
+				// margin: 5px 10px;
+				// margin-top: 0;
+
+				.aw-type {
+					font-size: 13px;
+					flex-wrap: nowrap;
+					float: left;
+					label {
+						font-weight: 600;
+						padding-right: 4px;
+					}
+					select {
+						min-width: 90px;
+						max-width: 100px;
+						height: 30px;
+					}
+					@include media('mobile'){
+						width: 20%;
+						select {
+							min-width: 80px;
+							max-width: 96px;
+						}
+					}
+					@include media('desktop'){
+						width: 18%;
+						select {
+							min-width: 80px;
+							max-width: 96px;
+						}
+					}
+					@include media('wide'){
+						width: 16%;
+						select {
+							min-width: 80px;
+							max-width: 96px;
+						}
+					}
+				}
+				button#clear-filters {
+					flex-wrap: nowrap;
+					margin-left: 25%;
+					margin-right: 25%;
+				}
+
+				// @include media('mobile'){
+				// 	width: 25%;
+				// }
+				// @include media('tablet'){
+				// 	width: 25%;
+				// }
+				// @include media('desktop'){
+				// 	width: 25%;
+				// }
+				// @include media('wide'){
+				// 	width: 25%;
+				// }
+			}
+
+
+			#my-wines-appraisal-table {
+				margin-top: 20px;
+				display: none;
+				#aw-appraisal-table,
+				#aw-appraisal-table_wrapper,
+				#aw-appraisal-table_wrapper.dataTables_wrapper {
+					// display: inline;
+					width: 100%;
+					//overflow: hidden;
+					.dataTables_length {
+						display: none;
+					}
+					.dataTables_info { display: none; }
+						.dataTables_scroll {
+							.dataTables_scrollHead {
+								display: inline;
+								font-weight: 100;
+							}
+							.dataTables_wrapper {
+								td {
+									border: 0;
+									&:last-child {
+										text-align: center;
+										margin: 0 auto;
+									}
+								}
+							}
+						}
+				}
+				h5 {
+					color: $acker-red-1;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+			}
+
+
+			#add-to-appraisal-lightbox {
+				display: none;
+				position: fixed;
+				z-index: 10000;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0,0,0,0.8);
+
+				.appraisal-lightbox-content {
+					margin: 0 auto;
+					z-index: 20000;
+					position: relative;
+					background-color: #FFF;
+					width: 80%;
+					max-width: 1000px;
+					min-width: 600px;
+					top: 320px;
+
+					.appraisal-lightbox-header {
+						background-color: #000;
+						color: #FFF;
+						display: block;
+						h1 {
+							color: #FFF;
+							text-align: left;
+							padding: 12px;
+							margin-left: 25px;
+						}
+						.lightbox-close {
+							float: right;
+							display: inline;
+							position: absolute;
+							right: 20px;
+							top: 10px;
+							button {
+								background-color: #000;
+								border-radius: 50%;
+								color: #FFF;
+								&:hover {
+									color: $acker-red-2;
+								}
+								i {
+									font-size: 18px;
+								}
+							}
+						}
+					}
+					.appraisal-lightbox-body {
+						margin-left: 25px;
+						margin-right: 25px;
+						padding: 6px;
+						table {
+							border: 0;
+							thead {
+								border-bottom: 1px solid #000;
+							}
+							tbody {
+								border: 0;
+								tr {
+									td {
+										border-bottom: 0;
+										max-width: 150px;
+
+										&:nth-child(1){
+											max-width: 50px;
+										}
+										&:nth-child(2){
+											max-width: 50px;
+										}
+										&:nth-child(3){
+											max-width: 50px;
+										}
+										input{
+											width: 100%;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+		#aw-account-mywines-appraisal-builder.aw-appraisal-builder {
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				background-color: $acker-grey-1;
+				margin-top: 2px;
+				margin-bottom: 20px;
+				text-align: left;
+				h1 {
+					//width: 260px;
+					padding-left: 12px;
+					padding-right: 12px;
+					padding-top: 8px;
+					padding-bottom: 8px;
+					margin: 0;
+				}
+				span.aw-selected {
+					margin-top: 7px;
+					text-align: left;
+				}
+				table {
+					display: flex;
+				}
+
+				button.aw-review-button {
+					width: 36%;
+					flex-grow: 3;
+					margin: 0 auto;
+					float: right;
+					text-align: right;
+					padding-right: 10px;
+					display: inline;
+					background-color: $acker-grey-1;
+					font-size: 14px;
+					color: $acker-red-1;
+					margin-left: 175px;
+				}
+		}
+		#show-appraisal-lightbox-button {
+			float: right;
+			font-size: 14px;
+			font-weight: 500;
+			height: 46px;
+			i {
+				color: #000;
+				font-weight: 150;
+				font-size: 16px;
+				line-height: 14px;
+			}
+		}
+		#submit-appraisal-form {
+			font-size: 14px;
+			font-weight: 500;
+			height: 46px;
+			text-transform: uppercase;
+			@include media('mobile'){
+				margin-top: 0;
+			}
+			@include media('tablet'){
+				margin-top: -42px;
+			}
+
+		}
+		#appraisalLoading {
+			max-width: 150px;
+			max-height: 36px;
+			float: none;
+			margin: 0 auto;
+			margin-top: -42px;
+			padding-right: 10px;
+			text-align: center;
+			svg {
+				fill: #000;
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+}

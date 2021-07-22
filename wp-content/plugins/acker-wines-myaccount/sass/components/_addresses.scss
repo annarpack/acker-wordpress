@@ -1,0 +1,115 @@
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt {
+	.thwma-acnt-cus-addr.th-custom-address{
+		.thwma-thslider-box {
+			width: 100%;
+			max-width: 960px;
+
+			ul#thwma-th-list {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				max-width: 960px;
+
+				li.thwma-thslider-item.shipping {
+					flex-direction: row;
+					width: 100%;
+					max-width: 960px;
+					min-width: 800px;
+					font-size: 14px;
+
+					@include media('mobile'){
+							max-width: $mobile_width;
+							min-width: $mobile_width;
+					}
+					@include media('tablet'){
+							max-width: $tablet_width;
+							min-width: $tablet_width;
+					}
+					@include media('desktop'){
+						max-width: 960px;
+						min-width: 900px;
+					}
+					@include media('wide'){
+						max-width: 960px;
+						min-width: 900px;
+					}
+
+					.thwma-adr-box.address-box {
+						border: 0;
+
+						&:hover {
+							box-shadow: 0;
+							//box-shadow: 0 6px 15px 0 rgba(0,0,0,.05);
+							//background-color: rgba(0,0,0,.5);
+						}
+						.thwma-main-content {
+							padding-bottom: 0;
+							.complete-aaddress {
+								float: left;
+								min-height: 150px;
+								min-width: 600px;
+								flex-direction: column;
+									.address-type-wrapper.row {
+										color: #000;
+										letter-spacing: 2px;
+										font-size: 16px;
+										text-transform: uppercase;
+									}
+									.acnt-adrr-text.thwma-adr-text.address-text.address-wrapper {
+
+									}
+							}
+							.btn-continue.address-wrapper {
+								margin-top: calc(110px / 2);
+								float: right;
+								flex-direction: column;
+								max-width: 400px;
+								form {
+									button {
+										flex-direction: row;
+									}
+									input {
+										flex-direction: row;
+									}
+								}
+							}
+						}
+						.thwma-acnt-adr-footer.acnt-address-footer {
+							vertical-align: middle;
+							float: right;
+							flex-direction: column;
+							border: 0;
+							border-top:0;
+							width: 165px;
+							flex-wrap: wrap;
+
+							.btn-acnt-edit {
+								flex-direction: row;
+								display: inline-block;
+								a { color: #000; }
+							}
+							form button.thwma-del-acnt.th-del-acnt {
+								flex-direction: row;
+								display: inline-block;
+								float: right;
+								color: red;
+							}
+						}
+					}
+					&:nth-child(odd){
+						background-color: #F2F2F2;
+					}
+				}
+			}
+
+		}
+
+		.add-acnt-adrs.thwma-add-acnt-adrs {
+			display: none;
+		}
+
+		margin-bottom: 30px;
+
+	}
+
+}

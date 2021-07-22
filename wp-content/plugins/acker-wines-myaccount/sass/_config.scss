@@ -1,0 +1,39 @@
+// Typography Variables
+// -------------------------------------------------
+
+// Color Variables
+// -------------------------------------------------
+
+// Acker Colors
+$acker-red-1:       #801747;
+$acker-red-2:       #801747;
+//$acker-red-2:       #962034;
+$acker-red-3:       #801747;
+//$acker-red-3:				#6F263D;
+$acker-black: #212121;
+$acker-grey-1: #EDEDED;
+$acker-grey-2: #a2a2a2;
+// ===================================
+
+// Responsive widths.
+
+$size__spacing-unit: 1rem;
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+$size__site-margins: calc(10% + 60px);
+$size__site-tablet-content: calc(8 * (100vw / 12) - 28px);
+$size__site-desktop-content: calc(6 * (100vw / 12) - 28px);
+
+$content__width: 1300px;
+$myaccount__sidebar: 15%;
+$notifications__right_margin: calc( (100vw - 1300px) / 2);
+$notifications__left_margin: calc( ( (100vw - 1300px) / 2) * -1);
+
+
+
+// Responsive widths.
+
+$mobile_width: 768px;
+$tablet_width: 980px;
+$desktop_width: 1168px;
+$wide_width: 1379px;

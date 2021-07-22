@@ -1,0 +1,700 @@
+/*------------------------------------*
+	MY ACCOUNT
+*------------------------------------*/
+
+.woocommerce {
+    .woocommerce-MyAccount-content {
+			// Page Title
+			h1.aw-page-title {
+				color: $acker-black;
+				font-size: 16px;
+			}
+      font-size: 12px;
+      // margin-left: 4%;
+	    #filtered-content{
+	        font-size: 12px;
+	        width: 100%;
+			}
+      h1 {
+          text-align: left;
+      }
+			#aw-account-myauctions-bid-history-vue-root {
+				.aw-bidhistory-auction .aw-auction {
+        	.dataTables_wrapper {
+            font-size: 12px;
+						color: #000;
+            width: 100%;
+						border-width: 0;
+						border-right: 0px;
+						border-left: 0px;
+						border: 0;
+						margin-top: 5px;
+
+						&:after {
+							margin-bottom: 25px;
+						}
+						.dataTables_filter {
+							display: none;
+						}
+						.dataTables_length {
+							display: none;
+						}
+            .dataTable {
+							thead {
+								background-color: #FFF;
+								tr {
+										//border-bottom: 1px solid #000;
+										border-right: 0px;
+										border-left: 0px;
+										th {
+											padding: 8px 16px;
+											font-weight: 100;
+											font-size: 13px;
+											font-weight: 100;
+											border-bottom: 1px solid #777;
+										}
+								}
+							}
+							tbody {
+								tr {
+									border: 0;
+									td {
+										vertical-align: middle;
+										padding: 3px;
+										border-color: #FFF;
+										font-size: 12px;
+										border-bottom: 0px;
+										span {
+												font-size: 12px;
+										}
+										&.aw-center {
+											text-align: center;
+											align-self: center;
+											margin: 0 auto;
+										}
+										&.aw-right {
+											text-align: right;
+											align-self: right;
+										}
+										&:last-child{
+											text-align: center;
+										}
+									}
+									&.even {
+										background-color: #FFF;
+									}
+								}
+							}
+						}
+								button.aw-appraisal {
+									text-align: center;
+									align-self: center;
+									margin: 0 auto;
+								}
+								input[type="checkbox"] {
+									text-align: center;
+									align-self: center;
+									margin: 0 auto;
+								}
+
+        }
+			}
+			// 	select,
+			// 	select#aw-myauctions-bidhistory-year-select,
+			// 	select#aw-myauctions-bidhistory-auction-select {
+			// 		display: inline;
+			// 		max-width: 100px;
+			// 		width: 20%;
+			// 	}
+			//
+			// #aw-bidhistory-filters {
+			// 	display: inline-flex;
+			// 	flex-direction: row;
+			// 	flex-wrap: nowrap;
+			//
+			// 	select,
+			// 	select#aw-myauctions-bidhistory-year-select,
+			// 	select#aw-myauctions-bidhistory-auction-select {
+			// 		display: inline;
+			// 		max-width: 150px;
+			// 		min-width: 100px;
+			// 		width: 20%;
+			// 	}
+			// 	label input {
+			// 		border: 1px solid #000;
+			// 		border-radius: 8px;
+			// 	}
+			// }
+}}
+}
+#aw-account-myauctions-bid-history-onetable_wrapper {
+	.dataTables_filter {
+		display: none;
+	}
+	.dataTables_length {
+		display: none;
+	}
+}
+#aw-account-myauctions-bid-history-vue-root {
+	display: none;
+	.aw-bidhistory-auction {
+		button h1.aw-year {
+			font-size: 16px;
+		}
+		h2 {
+			font-size: 20px;
+			margin-top: 10px;
+			margin: 0;
+			padding: 0;
+			color: $acker-red-1;
+			font-weight: 200;
+			span.aw-saledate {
+				font-size: 16px;
+				color: $acker-red-1;
+			}
+		}
+		h1.aw-year {
+			font-size: 20px;
+			// color: $acker-black;
+			i {
+				fill: $acker-red-1;
+				color: $acker-red-1;
+				font-size: 14px;
+				padding-left: 6px;
+				// &:before {
+				// 	content: "\e604";
+				// }
+				&.closed:before {
+
+				}
+			}
+		}
+		.aw-year-buttons {
+			background-color: #FFF;
+			border: 0;
+		}
+	}
+}
+// .ui-helper-clearfix:before,
+// .ui-helper-clearfix:after {
+// 	content: "\003c";
+// }
+.aw-bidhistory-filters {
+	margin: 0 auto;
+	padding-top: 20px;
+	border: 0;
+	position: relative;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin-left: 0;
+	vertical-align: top;
+
+	.aw-result {
+		font-size: 13px;
+		flex-wrap: nowrap;
+		label {
+			font-weight: 600;
+			padding-right: 4px;
+		}
+		select {
+			min-width: 90px;
+			max-width: 100px;
+			height: 30px;
+		}
+		@include media('mobile'){
+			width: 10%;
+			select {
+				min-width: 80px;
+				max-width: 96px;
+			}
+		}
+		@include media('tablet'){
+			width: 10%;
+			select {
+				min-width: 80px;
+				max-width: 96px;
+			}
+		}
+		@include media('tablet'){
+			width: 16%;
+		}
+		@include media('desktop'){
+			width: 16%;
+		}
+		@include media('wide'){
+			width: 16%;
+		}
+	}
+	.aw-dates {
+		//clear: both;
+		font-size: 13px;
+		float: right;
+		text-align: right;
+		width: 32%;
+		flex-grow: 3;
+		margin-left: 0;
+		padding-left: 8px;
+		vertical-align: top;
+
+		form input[type="text"] {
+			height: 30px;
+			min-height: 30px;
+			max-height: 30px;
+		}
+		form {
+			vertical-align: top;
+			label {
+				padding-left: 10px;
+				padding-right: 8px;
+				font-weight: 600;
+				font-size: 12px;
+				//vertical-align: top;
+				top: 12px;
+			}
+			button {
+				margin-left: 10px;
+			}
+			input {
+				min-width: 100px;
+				max-width: 120px;
+				padding-left: 8px;
+				font-size: 13px;
+				padding: 0;
+				//padding-top: 2px;
+				//padding-bottom: 2px;
+				&#bidhistory-filter-dates-from {
+					font-size: 13px;
+					&.hasDatepicker {
+						text-align: center;
+						height: 30px;
+						min-height: 30px;
+						max-height: 30px;
+						font-size: 13px;
+					}
+				}
+				&#bidhistory-filter-dates-to {
+					font-size: 13px;
+					&.hasDatepicker {
+						text-align: center;
+						height: 30px;
+						min-height: 30px;
+						max-height: 30px;
+						font-size: 13px;
+					}
+				}
+				@include media('mobile'){
+					min-width: 88px;
+					max-width: 88px;
+				}
+				@include media('tablet'){
+					min-width: 88px;
+					max-width: 100px;
+				}
+				@include media('desktop'){
+					min-width: 100px;
+					max-width: 120px;
+				}
+				@include media('wide'){
+					min-width: 100px;
+					max-width: 120px;
+				}
+			}
+			@include media('desktop'){
+				height: 32px;
+			}
+			@include media('wide'){
+				height: 32px;
+			}
+		}
+		@include media('mobile'){
+			width: 16%;
+		}
+		@include media('tablet'){
+			width: 26%;
+		}
+		@include media('desktop'){
+			width: 36%;
+			height: 32px;
+			//vertical-align: top;
+		}
+		@include media('wide'){
+			width: 36%;
+			height: 32px;
+			//vertical-align: top;
+		}
+	}
+	.aw-search {
+		font-size: 13px;
+		clear: both;
+		width: 33%;
+		float: right;
+		text-align: right;
+		align-self: flex-end;
+		//margin-left: 30%;
+		margin-bottom: 8px;
+		label {
+			font-weight: 600;
+			font-size: 13px;
+		}
+		input {
+			height: 30px;
+			max-height: 30px;
+			text-align: left;
+			padding-left: 2px;
+			@include media('mobile'){
+				width: 100px;
+			}
+			@include media('tablet'){
+				width: 160px;
+			}
+			@include media('desktop'){
+				width: 200px;
+			}
+			@include media('wide'){
+				width: 	250px;
+			}
+		}
+		span {
+			color: #545454;
+		}
+		#aw-search-filter-info {
+			display: block;
+			font-size: 12px;
+			color: #545454;
+		}
+		@include media('mobile'){
+			width: 24%;
+		}
+		@include media('tablet'){
+			width: 30%;
+		}
+		@include media('desktop'){
+			width: 33%;
+		}
+		@include media('wide'){
+			width: 33%;
+		}
+	}
+
+
+}
+#aw-account-bidhistory-appraisal-builder.aw-appraisal-builder {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		background-color: $acker-grey-1;
+		margin-top: 2px;
+		//margin-bottom: 4px;
+		text-align: left;
+		h1 {
+			//width: 260px;
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			margin: 0;
+		}
+		span.aw-selected {
+			margin-top: 7px;
+			text-align: left;
+
+		}
+		button.aw-review-button {
+			background-color: $acker-grey-1;
+			width: 36%;
+			flex-grow: 3;
+			margin: 0 auto;
+			float: right;
+			text-align: right;
+			padding-right: 10px;
+			display: inline;
+
+			font-size: 14px;
+			color: $acker-red-1;
+			margin-left: 175px;
+		}
+}
+
+div#aw-account-bidhistory-appraisal {
+	background-color: #FAFAFA;
+	display: none;
+	.aw-appraisal-table {
+		width: 100%;
+		clear: both;
+		padding: 0 6px;
+
+		h5 {
+			font-family: Avenir Book;
+			letter-spacing: 1.5px;
+			font-size: 1.12em;
+			padding: 6px 6px;
+			margin: 0 auto;
+			text-align: left;
+			font-weight: 600;
+			&:first-child{
+				padding-top: 12px;
+			}
+		}
+		table {
+			background: transparent;
+			clear: both;
+			border: 0;
+			margin-bottom: 0;
+			.dataTables_empty {
+				border-bottom: 0;
+			}
+			.dataTables_scrollHead {
+				background: transparent;
+				width: 100%;
+				color: $acker-black;
+				font-weight: 100;
+				//border-bottom: 1px solid #212121;
+				//border-bottom: 1px solid #CCC;
+			}
+			.dataTables_scrollBody {
+				background: transparent;
+				width: 100%;
+				border: 0;
+				overflow: hidden;
+			}
+			.dataTables_info {
+				display: none;
+			}
+		}
+		table#aw-addto-appraisal-table {
+			border: 0;
+			input {
+				margin: 0 auto;
+				text-align: center;
+				//min-width: 100px;
+			}
+			tr {
+				&:last-child {
+					//width: 100px;
+				}
+				td {
+					border-bottom: 0;
+					&:last-child {
+						//width: 100px;
+					}
+				}
+				.dataTables_info {
+					display: none;
+				}
+			}
+				@include media('mobile'){
+					th {
+						max-width: 20px;
+					}
+					td, td input {
+						max-widtH: 20px;
+					}
+				}
+				@include media('tablet'){
+					th {
+						max-width: 88px;
+					}
+					td, td input {
+						max-widtH: 88px;
+					}
+				}
+				@include media('desktop'){
+					th {
+						max-width: 100px;
+					}
+					td, td input {
+						max-widtH: 100px;
+					}
+				}
+				@include media('wide'){
+					th {
+						max-width: 150px;
+					}
+					td, td input {
+						max-widtH: 150px;
+					}
+			}
+			// button.aw-addto-appraisal-button {
+			// 	//padding: 3px;
+			// 	margin: 0 auto;
+			// 	margin-right: 4px;
+			// 	//margin-bottom: 8px;
+			// 	//padding-right: 6px;
+			// }
+			button.aw-addto-appraisal-table-submit {
+				float: right;
+				margin-right: 4px;
+				//border-radius: 3px;
+				//border: 1px solid #000;
+				//padding: 3px;
+				// margin-top: 6px;
+				//margin-bottom: 6px;
+				// background-color:#f6f6f6;
+				// &:hover{
+				// 	background-color: #e2e4e7;
+				// }
+			}
+		}
+		table#aw-bidhistory-appraisal-table,
+		#aw-bidhistory-appraisal-table_wrapper {
+			width: 100%;
+			background-color: #FAFAFA;
+			border: 0;
+				background-color: #FAFAFA;
+				//border-bottom: 1px solid #CCC;
+				thead {
+					width: 100%;
+					//max-width: 100%;
+					@include media('mobile'){
+					}
+					@include media('desktop'){
+						min-width: 1100px;
+					}
+					@include media('desktop'){
+						min-width: 1100px;
+					}
+					th {
+						background-color: #FAFAFA;
+						border-bottom: 1px solid #777;
+						font-weight: 100;
+						font-size: 12px;
+					}
+				}
+				td {
+					background-color: #FAFAFA;
+					border: 0;
+				}
+			.dataTables_length { display: none; }
+			thead tr th, tbody tr td,
+			.dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+			.dataTables_scroll .dataTables_scrollBody	tbody tr td {
+				//width: 30%;
+				background-color: #FAFAFA;
+				font-weight: 100;
+				min-width: 60px;
+				//max-width: 100px;
+				@include media('mobile'){
+					min-width: 50px;
+					max-width: 60px;
+				}
+				@include media('tablet'){
+					min-width: 60px;
+					max-width: 80px;
+				}
+				@include media('desktop'){
+					min-width: 80px;
+					&:first-child {
+						max-width: 120px;
+						min-width: 100px;
+					}
+					&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+						max-width: 50px;
+						min-width: 40px;
+					}
+					&:nth-child(5){
+						//width: 40%;
+						min-width: 150px;
+					}
+					// &:last-child {
+					// 	max-width: 50px;
+					// 	min-width: 0;
+					// }
+				}
+				@include media('wide'){
+					min-width: 84px;
+					&:first-child {
+						//width: 25%;
+						max-width: 120px;
+						min-width: 100px;
+					}
+					&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+						//width: 16%;
+						max-width: 50px;
+						min-width: 40px;
+					}
+					&:nth-child(5){
+						//width: 40%;
+						min-width: 200px;
+					}
+					// &:last-child {
+					// 	max-width: 50px;
+					// 	min-width: 0;
+					// }
+				}
+			}
+			.dataTables_info {
+				display: none;
+			}
+
+		div.aw-button-container {
+			width: 100%;
+			border-bottom: 1px solid #DDD;
+			display: none;
+			height: 42px;
+
+			margin-top: 12px;
+			margin-bottom: 12px;
+
+			#appraisalLoading {
+				max-width: 150px;
+				max-height: 36px;
+				float: right;
+				margin: 0 auto;
+				margin-top: 0px;
+				padding-right: 10px;
+				text-align: center;
+				svg {
+					fill: #000;
+					width: 25px;
+					height: 25px;
+				}
+			}
+			button#aw-bidhistory-appraisal-submit-button {
+				clear: both;
+				display: block;
+				margin: 0 auto;
+				//margin-right: 8px;
+				//clear: both;
+				// float: right;
+				// text-align: right;
+				// border-radius: 3px;
+				// border: 1px solid #000;
+				// padding: 3px;
+				// font-size: .857em;
+				// letter-spacing: 1.5px;
+				//
+				// &:hover{
+				// 	background-color: #e2e4e7;
+				// }
+			}
+		}
+		button.remove-from-appraisal {
+			fill: #f6f6f6;
+			background-color: #FAFAFA;
+		}
+	}
+	} // end aw-appraisal-table
+}
+// ------------------------------------
+// DATE PICKER
+// ------------------------------------
+.ui-datepicker.ui-widget {
+	.ui-datepicker-header {
+		a.ui-datepicker-prev {
+			span.ui-icon {
+				background-image: url('/wp-content/mu-plugins/acker-wines-shared/css/images/sort_asc.png');
+				transform:rotate(-90deg);
+				background-position: -1px 2px;
+			}
+		}
+		a.ui-datepicker-next {
+			span.ui-icon {
+				background-image: url('/wp-content/mu-plugins/acker-wines-shared/css/images/sort_desc.png');
+				transform:rotate(-90deg);
+				background-position: -1px -4px;
+			}
+		}
+	}
+}

@@ -3,297 +3,297 @@
 namespace AckerWines;
 
 if ( ! class_exists( 'AW_Purchase_History' ) ) {
-    class AW_Purchase_History {
+  class AW_Purchase_History {
 
-        const AW_PURCHASE_HISTORY_ENDPOINT = 'purchase-history';
+	  const AW_PURCHASE_HISTORY_ENDPOINT = 'purchase-history';
 
-        public function init(){
-            if ( ! defined( 'AW_ACCOUNT_DIR' ) ) {
-                define( 'AW_ACCOUNT_DIR', plugin_dir_path( __FILE__ ) );
-            }
-            $includes_path = plugin_dir_path( __FILE__ ) . '../includes/';
-            require_once $includes_path . 'ApiHelper.php';
-            require_once $includes_path . 'ApiRequestResult.php';
-            //add_action( 'wp_ajax_aw_purchase_history_filter_click', array( $this, 'aw_purchase_history_filter_click' ));
-            //add_action( 'wp_ajax_nopriv_aw_purchase_history_filter_click', array( $this, 'aw_purchase_history_filter_click' ));
-            ApiHelper::registerAjaxEndpoint('aw_purchase_history_filter_click', true);
-            add_shortcode('aw_purchase_history_filter', array( $this, 'aw_purchase_history_filter_shortcode'));
-            aw_shared_plugin_init();
-        }
+	  public function init(){
+			//wp_enqueue_style( 'account-style');
+	      // $includes_path = plugin_dir_path( __FILE__ ) . '../includes/';
+	      // require_once $includes_path . 'ApiHelper.php';
+	      // require_once $includes_path . 'MyAuctionsApi.php';
+	      //ApiHelper::registerAjaxEndpoint('aw_purchase_history_filter_click', true);
+	      //add_shortcode('aw_purchase_history_filter', array( $this, 'aw_purchase_history_filter_shortcode'));
+	      //aw_shared_plugin_init();
+	  }
+		public static function aw_purchase_history_get_filters(){
+				$slugs = ['all', 'shop_order', 'auction', 'tickets', 'shop_subscription'];
+				$titles = ['All', 'Retail', 'Auction', 'Tickets', 'Wine Club'];
+				$filters = array(
+						'slugs' => $slugs,
+						'titles' => $titles
+				);
+				return $filters;
+		}
+		public static function aw_purchase_history_get_order_type($order_type){
+				$order_type_array = ['shop_order', 'shop_subscription', 'tickets', 'auction'];
+				$order_titles_array = ['Retail', 'Wine Club', 'Wine Workshop', 'Auction'];
+				$index = array_search($order_type, $order_type_array);
+				$type_title = $order_titles_array[$index];
+				return $type_title;
+		}
 
-        // function aw_purchase_history_filter_shortcode( $atts ){
-        //     $filter = $atts['filter'];
-        //     $page = $atts['page'];
-        //     echo '<p>' . var_dump($filter) . '</p>';
-        //     echo '<p>' . var_dump($page) . '</p>';
-        //
-        //     $a = shortcode_atts( array(
-        // 		'filter' => $filter,
-        //         'page' => $page
-        // 	), $atts );
-        //
-        // }
+		public static function aw_purchase_history_filter_buttons(){
+				$filters = AW_Purchase_History::aw_purchase_history_get_filters();
+				$filter_slugs = $filters['slugs'];
+				$filter_titles = $filters['titles'];
+				$length = sizeof($filter_titles);
+				echo '<div id="purchase-history-filters-section" style="display: none;">
+					<div class="aw-type">
+						<label>Type</label>
+						<input type="hidden" id="purchase-history-filter-selection-type" value="" />
+						<select class="type-filter">';
+							for($i = 0; $i < sizeof($filter_slugs); $i++){
+									echo '<option data-id="' . $filter_slugs[$i] . '" value="' . $filter_titles[$i] . '"  >';
+										echo $filter_titles[$i];
+									echo '</option>';
+								}
+						echo '</select>
+					</div>
 
-        public function aw_purchase_history_get_template( $template_name , $filter ){
-            $path = plugin_dir_path( __FILE__ ) . 'templates/my-' . $template_name . '.php';
-            include($path);
-            //return \aw_purchase_history_return_products($filter);
-            //return AW_Purchase_History::aw_purchase_history_get_main_content($template_name, $filter);
-        }
-        public function aw_purchase_history_account_menu_items($items) {
-            $items[AW_PURCHASE_HISTORY_ENDPOINT] = __('Purchase History', 'acker_wines');
-            return $items;
-        }
+					<div class="aw-dates">
+						<label>From</label>
+						<input type="text" id="purchase-history-filter-selection-dates-from" value=""  />
+						<label>To</label>
+						<input type="text" id="purchase-history-filter-selection-dates-to" value=""  />
+					</div>
 
-        public function aw_purchase_history_get_filters(){
-            $slugs = ['invoices', 'shop_order', 'auction', 'tickets', 'shop_subscription'];
-            $titles = ['Invoices', 'Wines', 'Auction', 'Tickets', 'Wine Club'];
-            $filters = array(
-                'slugs' => $slugs,
-                'titles' => $titles
-            );
-            return $filters;
-        }
+				</div>';
 
-        public static function aw_purchase_history_filter_buttons(){
-            $filters = AW_Purchase_History::aw_purchase_history_get_filters();
-            $filter_slugs = $filters['slugs'];
-            $filter_titles = $filters['titles'];
-            $length = sizeof($filter_titles);
-            echo '<div id="purchase-history-filter-buttons-section" class="tabs" data-tab role="tablist">';
-            for($i = 0; $i < sizeof($filter_slugs); $i++){
-                echo '<div class="tab filter-button" data-id=' . $filter_slugs[$i] . ' type="button" >';
-                    echo '<input type="radio" id="tab-' . $i . '" data-id="' . $filter_slugs[$i] . '" class="filter-buttons" >';
-                    echo '<label for="tab-' . $i . '" data-id="' . $filter_slugs[$i] . '" >';
-                        echo $filter_titles[$i];
-                    echo '</label>';
-                echo '</div>';
-            }
-            echo '</div>';
-            echo '<div class="loading"></div>';
-        }
-        public function aw_purchase_history_get_order_type($order_type){
-            $order_type_array = ['shop_order', 'shop_subscription', 'tickets'];
-            $order_titles_array = ['Retail Order', 'Subscription', 'Event Tickets'];
-            $index = array_search($order_type, $order_type_array);
-            $type_title = $order_titles_array[$index];
-            return $type_title;
-        }
-        public function aw_purchase_history_get_filter_title($filter){
-            $filters = AW_Purchase_History::aw_purchase_history_get_filters();
-            $filter_slugs = $filters['slugs'];
-            $filter_titles = $filters['titles'];
-            $length = sizeof($filter_titles);
-            $index = array_search($filter, $filter_slugs);
-            $type_title = $filter_titles[$index];
-            return $type_title;
-        }
-        public static function aw_purchase_history_get_invoice_data($order, $item){
-            $order_url = $order->get_view_order_url();
-            $order_number = $order->get_order_number();
-            $order_date = wc_format_datetime($order->get_date_created());
-            $order_total = $order->get_formatted_order_total();
-            $item_count = $order->get_item_count();
+				// <div class="aw-year">
+				// 	<label>Year</label>
+				// 	<input type="hidden" id="purchase-history-filter-selection-year" value=""  />
+				// 	<select class="year-filter">
+				// 		<option>All</option>
+				// 	</select>
+				// </div>
+		}
+
+		public static function aw_purchase_history_get_all_auction_orders($data){
+			$auction_data = json_decode($data);
+			$auction_orders = $auction_data->data;
+      $all_orders = array(); $order_data = array();
+			foreach($auction_orders as $order){
+				$location = $order->siteCode;
+				if($location == 'US' || $location == 'NY' || $location == 'Web') {
+					$total_due = $order->totalAmount;
+					$currancy = '$';
+					$interest_amt = $order->interestAmount;
+					$balanceDue = $order->balanceDue;
+					$paidAmount = $order->paidAmount;
+				}
+				else {
+					$total_due = $order->totalAmountLocal;
+					$currancy = $order->currencySymbolLocal;
+					$interest_amt = $order->interestAmountLocal;
+					$balanceDue = $order->balanceDueLocal;
+					$paidAmount = $order->paidAmountLocal;
+				}
+
+				$order_total_format = number_format($total_due, 2, '.', ',');
+				//$order_total_display = '<span class="woocommerce-Price-amount amount">' . $currancy . ' ' . $order_total_format . ' </span>';
+				$order_total_display = $currancy . ' ' . $order_total_format;
+				if($balanceDue < 1){
+					$payment_status = '<b>PAID</b>';
+					$order_status = 'paid';
+				}
+				else {
+					$payment_status = '<b>UNPAID</b>';
+					$order_status = 'unpaid';
+				}
+				$order_type = 'Auction';
+				$order_date = $order->auctionDate;
+				//$auction_timezone = $order->auctionDate->timezone;
+				//$order_date = new \DateTime($auction_date);
+				//$order_date = date_format($order_date_data, 'Y-m-d');
+				$paddle_id = $order->paddleId;
+				$auction_no = $order->auctionNumber;
+				$order_number = $auction_no . '-' . $paddle_id;
+				//$order_number_display = '<span class="woocommerce-Price-amount amount"> ' . $order_number . ' </span>';
+				// $download_button = '<button
+				// 		data-paddleID="' . $order_number . '"
+				// 		class="aw-invoice-download-button aw-button aw-red-button">Download</button>
+				// 		<i class="fa fa-spinner fa-spin"></i>';
+				$url = home_url() . '/api/auction-invoice.php?paddle=' . $paddle_id;
+				$download_button = '<a class="aw-invoice-download-button aw-button aw-red-button"
+					data-paddleID="' . $order_number . '"
+					href="' . $url . '" >Download</a>
+					<i class="fa fa-spinner fa-spin"></i>';
+
+				$order_data = array(
+						'order_date' => $order_date,
+						'order_number' => $order_number,
+						'order_link' => $order_number,
+						'order_type' => $order_type,
+						'order_total' => $order_total_display,
+						'order_status' => $order_status,
+						'payment_status' => $payment_status,
+						'ship_status' => '',
+						'ship_date' => '',
+						'tracking_link' => '',
+						'order_details' => $download_button
+				);
+				array_push($all_orders, $order_data);
+			}
+			return $all_orders;
+		}
+
+	  public static function aw_purchase_history_get_all_retail_orders(){
+      $all_orders = array(); $order_data = array();
+      $current_user = wp_get_current_user();
+      $user = $atts['user'] ? $atts['user'] : get_current_user_id();
+      $customer_orders = get_posts(array(
+          'numberposts' => -1,
+          'meta_key'=> '_customer_user',
+          'meta_value'=> $user,
+          'post_type' => wc_get_order_types(),
+          'post_status' => array_keys(wc_get_order_statuses()),
+      ));
+      if ($customer_orders) {
+        foreach($customer_orders as $customer_order){
+            $order = wc_get_order($customer_order);
             $order_items = $order->get_items(apply_filters('woocommerce_purchase_order_item_types', 'line_item'));
-            $order_id = $order->get_order_number();
-            $order_url = $order->get_view_order_url();
-            $order_number = $order->get_order_number();
-            $order_date = wc_format_datetime($order->get_date_created());
-            $order_total = $order->get_formatted_order_total();
-            $order_status = $order->get_status();
-            $details_button_url = !($order_id) ? '' : sprintf(
-            '<a href="%s" rel="nofollow" data-order_id="%s" class="button %s ">%s</a>',
-            esc_url($order_url),
-            esc_attr($order_id),
-            'order_details_button',
-            'Details'
-            );
-
-            $st = \WC_Shipment_Tracking_Actions::get_instance();
-            if(isset($st)){
-                $tracking_items = $st->get_tracking_items( $order_id );
-                if(($order_status == 'completed') && isset($tracking_items)) {
-                    $tracking_item = $tracking_items[0];
-                    if( isset($tracking_item['date_shipped'])){
-                        $order_status = '<time datetime=" ' . date( 'Y-m-d', $tracking_item['date_shipped'] ) . ' " title="' .  date( 'Y-m-d', $tracking_item['date_shipped'] ) . ' "> Shipped ' .  date_i18n( get_option( 'date_format' ), $tracking_item['date_shipped'] ) . '</time></br>';
-                        } //end if
-                }//end if
-            }
-            $tickets = get_post_meta( $order_id , '_eventid', true);
-            //echo var_dump($tickets);
-            if($tickets != ''){
-             $order_type = 'Event Ticket';
-            } else {
-             $order_type = $order->get_type();
-            }
-            $order_type_title = AW_Purchase_History::aw_purchase_history_get_order_type($order_type);
-            $invoice_data = array(
-                'order-date' => $order_date,
-                'order-number' => $order_number,
-                'order-url' => $order_url,
-                'order-type' => $order_type,
-                'order-total' => $order_total,
-                'order-status' => $order_status,
-                'order-button' => $details_button_url
-            );
-            return $invoice_data;
-
-        } // end func my orders content
-
-
-        public static function aw_purchase_history_get_products_data($order, $item){
-            $order_url = $order->get_view_order_url();
-            $order_number = $order->get_order_number();
-            $order_date = wc_format_datetime($order->get_date_created());
-            $order_total = $order->get_formatted_order_total();
-            $item_count = $order->get_item_count();
-            $order_items = $order->get_items(apply_filters('woocommerce_purchase_order_item_types', 'line_item'));
-
-            //echo '<p>filter slug ' . $filter . '</p>';
-            $product = $item->get_product();
-            $is_visible = $product && $product->is_visible();
-            $product_permalink = apply_filters('woocommerce_order_item_permalink', $is_visible ? $product->get_permalink($item) : '', $item, $order);
-            $product_name = apply_filters('woocommerce_order_item_name', $product_permalink ? sprintf('<a href="%s">%s</a>', $product_permalink, $item->get_name()) : $item->get_name(), $item, $is_visible);
-            $product_qty = apply_filters('woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf('&times; %s', $item->get_quantity()) . '</strong>', $item);
-            $product_total = wc_price($item->get_total());
-            $current_price = ($product->id && $product->is_purchasable()) ? $product->get_price_html() : '';
-            $add_button_url = !($product->id && $product->is_purchasable()) ? '' : sprintf(
-                '<a href="%s" rel="nofollow" data-product_id="%s" class="button %s product_type_%s">%s</a>',
-                esc_url($product->add_to_cart_url()),
-                esc_attr($product->id),
-                'add_to_cart_button',
-                esc_attr($product->product_type),
-                esc_html('Buy Again')
-            );
-            $order_type = $order->get_type();
-            $event_id = get_post_meta( $item['product_id'] , '_eventid', true);
-            if(isset($event_id) && $event_id != ''){
-                $order_type = 'tickets';
-            }
-            $product_type = AW_Purchase_History::aw_purchase_history_get_order_type($order_type);
-            $product_name;
-            if($order_type == 'tickets'){
-                $event = get_post($event_id);
-                $event_permalink = get_permalink($event);
-                $product_name = '<a href=' . esc_url($event_permalink) . '> ' . $product_name . '</a>' . $product_qty;
-            } else {
-                $product_name = '' . $product_name . '' . $product_qty;
-            }
-            $product_arr = array(
-                'order-number' => $order_number,
-                'order-url' => $order_url,
-                'order-type' => $order_type,
-                'product-type' => $product_type,
-                'product-name' => $product_name,
-                'product-total' => $product_total,
-                'product-price' => $current_price,
-                'product-button' => $add_button_url
-            );
-
-            return $product_arr;
-        }
-
-        public static function aw_purchase_history_show_content($page, $filter) {
-            $current_user = wp_get_current_user();
-            $user = $atts['user'] ? $atts['user'] : get_current_user_id();
-            $customer_orders = get_posts(array(
-                'numberposts' => -1,
-                'meta_key'=> '_customer_user',
-                'meta_value'=> $user,
-                'post_type' => wc_get_order_types(),
-                'post_status' => array_keys(wc_get_order_statuses()),
-            ));
-            if ($customer_orders) {
-                if($page == 'invoices'){
-                    echo '<h1>Invoices</h1>';
-                    echo '<table id="aw-my-orders-table" class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table" cellspacing="0" width="100%" style="margin-top: 0; margin-bottom: 0;" >';
-                    echo '<thead><tr>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-date"><span class="nobr">Order Date</span></th>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-number"><span class="nobr">Order #</span></th>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-type"><span class="nobr">Order Type</span></th>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-total"><span class="nobr">Order Total</span></th>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-status"><span class="nobr">Order Status</span></th>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-actions"><span class="nobr">Order Details</span></th>';
+                if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
+                    continue;
                 }
-                if($page == 'products'){
-                    $title = AW_Purchase_History::aw_purchase_history_get_filter_title($filter);
-                    echo '<h1>' . $title . '</h1>';
-                    echo '<table id="aw-my-products-table" class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table" cellspacing="0" width="100%" style="margin-top: 0; margin-bottom: 0;" >';
-                    echo '<thead><tr>';
-                    echo '<th class="woocommerce-orders-table__header aw-order-number"><span class="nobr">Order #</span></th>';
-                    echo '<th class="woocommerce-orders-table__header  aw-product-type"><span class="nobr">Order Type</span></th>';
-                    echo '<th class="woocommerce-orders-table__header  aw-product-name"><span class="nobr">Product Name</span></th>';
-                    echo '<th class="woocommerce-orders-table__header  aw-product-total"><span class="nobr">Paid Price</span></th>';
-                    echo '<th class="woocommerce-orders-table__header  aw-product-price"><span class="nobr">Current Price</span></th>';
-                    echo '<th class="woocommerce-orders-table__header  aw-product-actions"><span class="nobr">Actions</span></th>';
+                $order_url = $order->get_view_order_url();
+                $order_number = $order->get_order_number();
+                $order_date = $order->get_date_created();
+								$order_date = $order_date->date;
+								//$order_date = $order_date->date;
+								//$order_date = wc_format_datetime($order->get_date_created());
+								// $date = $order->get_date_created();
+								// $date = $date->date;
+								// $order_date_data = new \DateTime($date);
+								//$order_date = $order_date_data->format('Y-m-d');
+                //$order_total = $order->get_formatted_order_total();
+								$order_total = '$' . $order->get_total();
+                $item_count = $order->get_item_count();
+                $order_items = $order->get_items(apply_filters('woocommerce_purchase_order_item_types', 'line_item'));
+                $order_id = $order->get_order_number();
+                $order_url = $order->get_view_order_url();
+                $order_number = $order->get_order_number();
+                //$order_date = wc_format_datetime($order->get_date_created());
+								$date = $order->get_date_created();
+								$order_date_data = new \DateTime($date);
+								$order_date = date_format($order_date_data, 'Y-m-d');
+                $order_status = $order->get_status();
+                $order_type = $order->get_type();
+								$order_link = '<a href="' . $order_url . '" >' . $order_number . '</a>';
+								$details_button = !($order_id) ? '' : sprintf(
+   	                '<a href="%s" rel="nofollow" data-order_id="%s" class="aw-button aw-red-button %s ">%s</a>',
+   	                esc_url($order_url),
+   	                esc_attr($order_id),
+   	                'order_details_button',
+   	                'Details'
+   	            );
+								$pay_url = esc_url($order->get_checkout_payment_url());
+ 							 	$pay_link = '<button class="aw-button aw-red-button" href="' . $pay_url . '" >Pay Now</button>';
+                $payment_status;
+                if($order_status == 'completed' || $order_status == 'processing'){
+                  $payment_status = '<b>PAID</b>';
                 }
-                echo '</tr></thead><tbody>';
+                else if($order_status == 'pending' || $order_status == 'on-hold'){
+                    //$payment_status = '<b>UNPAID</b>';
+									$payment_status = '<a href="' . $pay_url . '" class="aw-button aw-red-button pay"" >Pay Now</a>';
+                }
+								else if($order_status == 'cancelled'){
+									$payment_status = '<b>CANCELLED</b>';
+								}
+                $ship_status;
+                if($order_status == 'completed'){
+									$payment_status = '<b>PAID</b>';
+                  $ship_status = 'Shipped';
+                }
+                else if($order_status == 'processing' ){
+									$payment_status = '<a href="' . $pay_url . '" class="aw-button aw-red-button pay"" >Pay Now</a>';
+                  $ship_status = 'To Be Shipped';
+                }
+                else { $ship_status = 'Not Shipped'; }
+                $ship_date = ''; $tracking_link = '';
+                if( class_exists('WC_Shipment_Tracking_Actions')){
+                    $st = \WC_Shipment_Tracking_Actions::get_instance();
+                    if(isset($st)){
+                        $tracking_items = $st->get_tracking_items( $order_id );
+                        if(($order_status == 'completed') && isset($tracking_items)) {
+                            $tracking_item = $tracking_items[0];
+                            if( isset($tracking_item['date_shipped'])){
+															if($ship_status == 'Shipped'){
+																$ship_status = '<time datetime=" ' . date( 'Y-m-d', $tracking_item['date_shipped'] ) . ' " title="' .  date( 'Y-m-d', $tracking_item['date_shipped'] ) . ' "> Shipped ' .  date_i18n( get_option( 'date_format' ), $tracking_item['date_shipped'] ) . '</time></br>';
+															}
+														} //end if
+														if(isset($tracking_item['tracking_provider'])){
+															$provider = $tracking_item['tracking_provider'];
+															switch($provider){
+																case "ups":
+																	$tracking_link = 'http://wwwapps.ups.com/WebTracking/track?track=yes&trackNums=1Z';
+																	break;
+																case "fedex":
+																	$tracking_link = 'http://www.fedex.com/Tracking?action=track&tracknumbers=';
+																	break;
+																case "usps":
+																	$tracking_link = 'https://tools.usps.com/go/TrackConfirmAction?tLabels=';
+																	break;
+																case "lasership":
+																	$tracking_link = 'http://www.lasership.com/track/LS';
+																	break;
+															}
+														}
+														if(isset($tracking_item['tracking_number'])){
+															$tracking_link = $tracking_link . $tracking_item['tracking_number'];
+															$tracking_link = '<a href="' . $tracking_link . '" class=" aw-button aw-red-button order_details_button" >Track</a>';
+														}
+                        }//end if
+                    }
+                }
+                if(metadata_exists('post', $order_id, '_eventid')){
+                    $tickets = get_post_meta( $order_id , '_eventid', true);
+                    if($tickets != ''){
+                        $order_type = 'Wine Workshop';
+                    }
+                }
+								$order_type_title = AW_Purchase_History::aw_purchase_history_get_order_type($order_type);
+                $item_data = array(
+                    'order_date' => $order_date,
+                    'order_number' => $order_number,
+                    'order_link' => $order_link,
+                    'order_type' => $order_type_title,
+                    'order_total' => $order_total,
+                    'order_status' => $order_status,
+                    'payment_status' => $payment_status,
+                    'ship_status' => $ship_status,
+										'ship_date' => $ship_date,
+                    'tracking_link' => $tracking_link,
+										'order_details' => $details_button,
+										'pay_link' => $pay_link
+                );
+            array_push($order_data, $item_data);
+        }//end for each order
+          //array_push($all_orders, $order_data);
+      }//end if customer orders
+      //return json_encode($order_data);
+      return $order_data;
+	  }
 
-                foreach ($customer_orders as $customer_order) {
-                    $order = wc_get_order($customer_order);
-                    $order_items = $order->get_items(apply_filters('woocommerce_purchase_order_item_types', 'line_item'));
 
-                    foreach ($order_items as $item_id => $item) {
-                        if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
-                            continue;
-                        }
-                        if($page == 'invoices'){
-                            $data = AW_Purchase_History::aw_purchase_history_get_invoice_data($order, $item);
-                            $type = $data['order-type'];
-                            $order_type_title =  AW_Purchase_History::aw_purchase_history_get_order_type($type);
-                            echo '<tr class="woocommerce-orders-table__row">';
-                                echo '<td class="woocommerce-orders-table__cell aw-order-date">' . $data['order-date'] . '</td>';
-                                echo '<td class="woocommerce-orders-table__cell aw-order-number">';
-                                    echo '<a href="' . $data['order-url'] . '">' . $data['order-number'] . '</a>';
-                                echo '</td>';
-                                echo '<td class="woocommerce-orders-table__cell aw-order-type">' . $order_type_title . '</td>';
-                                echo '<td class="woocommerce-orders-table__cell aw-order-total">' . $data['order-total'] . '</td>';
-                                echo '<td class="woocommerce-orders-table__cell aw-order-status">' . $data['order-status'] . '</td>';
-                                echo '<td class="woocommerce-orders-table__cell aw-order-actions">' . $data['order-button'] . '</td>';
-                            echo '</tr>';
-                        }
-                        if($page == 'products'){
-                            $data = AW_Purchase_History::aw_purchase_history_get_products_data($order, $item);
-                            $type = $data['order-type'];
-                            $order_type_title =  AW_Purchase_History::aw_purchase_history_get_order_type($type);
-                            if($type == $filter){
-                                echo '<tr class="woocommerce-orders-table__row aw-product-order">';
-                                    echo '<td class="woocommerce-orders-table__cell aw-order-number"><a href="' . $data['order-url'] . '">' . $data['order-number'] . '</a></td>';
-                                    echo '<td class="woocommerce-orders-table__cell aw-product-type">' . $data['product-type'] . '</td>';
-                                    echo '<td class="woocommerce-orders-table__cell aw-product-name">' . $data['product-name'] . '</td>';
-                                    echo '<td class="woocommerce-orders-table__cell aw-product-total">' . $data['product-total'] . '</td>';
-                                    echo '<td class="woocommerce-orders-table__cell aw-product-price">' . $data['product-price'] . '</td>';
-                                    echo '<td class="woocommerce-orders-table__cell aw-product-actions">' . $data['product-button'] . '</td>';
-                                echo '</tr>';
-                                }
-                            }
-                        } // end for each item
-                    } // end for each order
-                echo '</tbody></table>';
+		public static function aw_purchase_history_get_combined_data(){
+			$retail_results = AW_Purchase_History::aw_purchase_history_get_all_retail_orders();
+			$auction_api = new API\AuctionProgApi();
+			$auction_data = $auction_api->getInvoices($auction_api->getApcId());
+			if(isset($auction_data)){
+				if(!empty($auction_data)){
+					$auction_results = AW_Purchase_History::aw_purchase_history_get_all_auction_orders($auction_data);
+					$all_results = array_merge($retail_results, $auction_results);
+					return $all_results;
+				}
+				else {
+					return $retail_results;
+				}
+			}
+			else {
+			 	return $retail_results;
+			}
+		}
 
-                ?>
-                <script type="text/javascript">
-                    <!--
-                    var page = '<?php echo $page; ?>';
-                    if(page === 'products'){ var title = '#aw-my-products-table' }
-                    if(page === 'invoices'){ var title = '#aw-my-orders-table' }
-                    var table = jQuery(title).DataTable({
-                        "responsive": true,
-                        "scrollY": '770px',
-                        "order": [[1, "desc"]],
-                        "paging": false,
-                        "bLengthChange": true,
-                        "bFilter": true
-                    });
-                    -->
-                </script>
-            <?php
-            } // end if
-
-        } // end aw_purchase_history_get_main_content
-
-
-    } // end class defninition
+  } // end class defninition
 } // end if
-$purchase_history_endpoint = new AW_Purchase_History();
-$purchase_history_endpoint->init();

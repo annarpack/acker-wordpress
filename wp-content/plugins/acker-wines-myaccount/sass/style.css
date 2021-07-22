@@ -1,0 +1,2976 @@
+/*!
+ * Plugin Name: 	AW Custom Styles - Anna
+ * Base Theme:      OceanWP
+ * Author: 			Anna
+ * Description: 	OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful & professional design. Very fast, responsive, RTL & translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet & mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor & WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+ * Version: 		1.6.4
+ * Tags: 			two-columns, right-sidebar, footer-widgets, blog, news, custom-background, custom-menu, post-formats, rtl-language-support, sticky-post, editor-style, threaded-comments, translation-ready, buddypress, custom-colors, featured-images, full-width-template, theme-options, e-commerce
+ * Text Domain: 	oceanwp
+ *
+ * License: GNU General Public License v3.0 or later
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * DO NOT ADD YOUR CSS TO THIS FILE - IT WILL BE LOST
+ * To add your own CSS, use a child theme: https://github.com/oceanwp/oceanwp-child-theme
+ *
+ * CSS file is in "assets/css"
+ */
+/*------------------------------------*
+	$MY ACCOUNT
+*------------------------------------*/
+/*------------------------------------*
+	MY DASHBOARD
+*------------------------------------*/
+.amount,
+.woocommerce-Price-amount.amount {
+  color: #03930f;
+}
+
+#aw-my-dashboard h1 {
+  clear: both;
+  float: none;
+  margin-bottom: 4px;
+}
+#aw-my-dashboard p {
+  margin: 0;
+}
+#aw-my-dashboard h5 {
+  color: #801747;
+  clear: both;
+  width: 100%;
+  padding-top: 1em;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#aw-my-dashboard h5 :not(:first-child) {
+  margin-top: 30px;
+}
+#aw-my-dashboard table.aw_dashboard {
+  width: 100%;
+  border: 0;
+  margin-bottom: 30px;
+}
+#aw-my-dashboard table.aw_dashboard thead {
+  background-color: #FFF;
+  border-bottom: 1px solid #212121;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#aw-my-dashboard table.aw_dashboard td {
+  border: 0;
+}
+@media only screen and (max-width: 980px) {
+  #aw-my-dashboard {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  #aw-my-dashboard {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  #aw-my-dashboard {
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  #aw-my-dashboard {
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 980px) {
+  #aw-my-dashboard #dashboard-vue-root {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  #aw-my-dashboard #dashboard-vue-root {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  #aw-my-dashboard #dashboard-vue-root {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  #aw-my-dashboard #dashboard-vue-root {
+    width: 100%;
+  }
+}
+
+/*------------------------------------*
+	NOTIFICATIONS
+*------------------------------------*/
+.woocommerce #aw-myaccount-notifications p {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid #a2a2a2;
+  color: #801747;
+}
+.woocommerce #aw-myaccount-notifications p:nth-child(1) {
+  border-top: 2px solid #a2a2a2;
+}
+.woocommerce #aw-myaccount-notifications p:nth-child(odd) {
+  background-color: #EDEDED;
+}
+.woocommerce #aw-myaccount-notifications p:nth-child(even) {
+  background-color: #FFF;
+}
+
+#aw-myaccount-name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#aw-myaccount-name h1 {
+  text-transform: uppercase;
+  font-weight: 10;
+  letter-spacing: 4px;
+  margin: 0 auto;
+}
+#aw-myaccount-name p {
+  margin: 0 auto;
+  font-size: 12px;
+}
+#aw-dashboard-all-complete {
+  display: none;
+}
+
+.appraisal-submit-button-dashboard #appraisal-submit-button {
+  font-size: 16px;
+}
+.appraisal-submit-button-dashboard #appraisal-submit-form {
+  font-size: 14px;
+  display: none;
+}
+.appraisal-submit-button-dashboard .wpcf7-file, .appraisal-submit-button-dashboard input {
+  border: 0;
+}
+
+body {
+  font-family: "AvenirNext", Sans-serif;
+}
+
+.aw-button,
+a.aw-button,
+button.aw-button {
+  padding: 5px 12px 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  width: auto;
+  min-width: 60px;
+  line-height: 1.8;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-family: AvenirNext, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  fill: #ffffff;
+  color: #ffffff;
+  border-radius: 3px;
+  -webkit-appearance: button;
+  min-width: 86px;
+}
+.aw-button.pay,
+a.aw-button.pay,
+button.aw-button.pay {
+  min-width: 36px;
+}
+.aw-button.aw-red-button,
+a.aw-button.aw-red-button,
+button.aw-button.aw-red-button {
+  background-color: #801747;
+  color: #FFF;
+  border: 1px solid #801747;
+}
+.aw-button.aw-red-button:hover,
+a.aw-button.aw-red-button:hover,
+button.aw-button.aw-red-button:hover {
+  background-color: #FFF;
+  color: #801747;
+}
+.aw-button.aw-white-button,
+a.aw-button.aw-white-button,
+button.aw-button.aw-white-button {
+  background-color: #FFF;
+  color: #000;
+  border: 1px solid #000;
+}
+.aw-button.aw-white-button:hover,
+a.aw-button.aw-white-button:hover,
+button.aw-button.aw-white-button:hover {
+  color: #FFF;
+  border: 1px solid #FFF;
+  background-color: #801747;
+}
+
+/* Don't cart icon ever */
+.oceanwp-mobile-menu-icon .wcmenucart span.wcmenucart-count {
+  display: none;
+}
+
+/* Don't show user profile */
+.user-profile {
+  display: none;
+  border: 0;
+}
+
+#my-account-menu.position-left .myaccount-menu li a {
+  border-right: 0;
+  border: 0;
+}
+
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content,
+#my-account-menu ~ .woocommerce-MyAccount-content {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content,
+#my-account-menu ~ .woocommerce-MyAccount-content {
+    width: 78%;
+    max-width: 800px;
+    padding-left: 6px;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content,
+#my-account-menu ~ .woocommerce-MyAccount-content {
+    width: 80%;
+    max-width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content,
+#my-account-menu ~ .woocommerce-MyAccount-content {
+    width: 85%;
+    max-width: 1100px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll {
+    max-width: 740px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table th,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table th {
+    max-width: 20px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table td,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table td {
+    max-widtH: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll {
+    max-width: 760px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table th,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table th {
+    max-width: 40px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table td,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table td {
+    max-widtH: 40px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll {
+    max-width: 960px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table th,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table th {
+    max-width: 80px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table td,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table td {
+    max-widtH: 80px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll {
+    max-width: 1300px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table th,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table th {
+    max-width: 200px;
+  }
+  .woocommerce .woocommerce-MyAccount-content .dataTables_scroll table td,
+#my-account-menu ~ .woocommerce-MyAccount-content .dataTables_scroll table td {
+    max-widtH: 200px;
+  }
+}
+
+.woocommerce #my-account-menu {
+  display: table;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left {
+  display: table;
+  border-right: 0;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu:before {
+  border-bottom: 0;
+  border: 0;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li {
+  border: 0;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li.active a.group-opener {
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 1px solid #e0e0e0;
+  text-decoration: underline;
+  color: #000;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li.active a {
+  border-right: 0;
+  border-left: 0;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li.active a span {
+  padding-left: 4px;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li a {
+  color: #000;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 0.8em;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li a i.fa {
+  display: none;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li a {
+    font-size: 11px;
+    text-align: center;
+    border: 0;
+    border-right: 1px solid #e0e0e0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li a {
+    font-size: 11px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li a {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li:nth-child(1) {
+  border: 0;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li:nth-child(1) a {
+  border-top: 0;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li.active a {
+  color: #801747;
+  border-right: 1px solid #e0e0e0;
+  text-decoration: none;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li ul.myaccount-submenu {
+  padding-left: 30px;
+}
+.woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu li ul.myaccount-submenu a.active {
+  color: #801747;
+  text-decoration: none;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu {
+    float: left;
+    max-width: 200px;
+    min-width: 100px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu {
+    float: left;
+    max-width: 300px;
+    min-width: 150px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce #my-account-menu.yith-wcmap.position-left ul.myaccount-menu {
+    float: left;
+    max-width: 300px;
+    min-width: 150px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce #my-account-menu {
+    bottom: 0;
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce #my-account-menu {
+    float: left;
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce #my-account-menu {
+    float: left;
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce #my-account-menu {
+    float: left;
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce #my-account-menu::after {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    top: 0;
+    float: none;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    margin-left: 20px;
+    float: right;
+    width: 75%;
+    max-width: 800px;
+    min-width: 600px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    margin-left: 20px;
+    float: left;
+    width: 80%;
+    max-width: 960px;
+    min-width: 800px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    margin-left: 20px;
+    float: right;
+    width: 80%;
+    max-width: 1300px;
+    min-width: 960px;
+  }
+}
+
+/*------------------------------------*
+	NOTIFICATIONS
+*------------------------------------*/
+#main #content-wrap.container #aw-myaccount-notifications {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  float: none;
+  width: 100%;
+  min-width: calc(100vw);
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media only screen and (max-width: 980px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    float: none;
+    width: 100%;
+    min-width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+    min-width: 768px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    float: none;
+    width: 100%;
+    min-width: calc(100vw);
+    margin-right: calc( (100vw - 1300px) / 2);
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    float: none;
+    width: 100%;
+    min-width: calc(100vw);
+    margin-right: calc( (100vw - 1300px) / 2);
+    margin-left: calc( ( (100vw - 1300px) / 3) * 0.15);
+  }
+}
+@media only screen and (min-width: 1168px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    float: none;
+    width: 100%;
+    min-width: calc(100vw);
+    margin-right: 0;
+    margin-left: calc( ( (100vw - 1300px) / 2) * -1);
+  }
+}
+@media only screen and (min-width: 1041px) and (max-width: 1176px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    width: 100%;
+    min-width: calc(100vw);
+    margin-left: calc( ( (100vw - 1300px) / 2) * 0.15);
+  }
+}
+@media only screen and (min-width: 1176px) and (max-width: 1271px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    width: 100%;
+    min-width: calc(100vw);
+    margin-left: calc( ( (100vw - 1230px) / 3) * 0.15);
+  }
+}
+@media only screen and (max-width: 746px) {
+  #main #content-wrap.container #aw-myaccount-notifications {
+    margin-left: 0%;
+    width: 100%;
+    min-width: calc(100vw);
+  }
+}
+#main #content-wrap.container #aw-myaccount-notifications p {
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+#page-loading {
+  margin: 0 auto;
+  max-height: 100px;
+  text-align: center;
+}
+#page-loading p {
+  text-align: center;
+}
+#page-loading p svg {
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+}
+#page-loading p svg circle {
+  height: 50px;
+  width: 50px;
+}
+
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm {
+  /*------------------------------------*
+  	LOCATION
+  *------------------------------------*/
+  /*------------------------------------*
+  	PHONE NUMBERS
+  *------------------------------------*/
+  /*------------------------------------*
+  	EMAIL PREFERENCES
+  *------------------------------------*/
+  /*------------------------------------*
+  	ACCOUNT NOTIFICATIONS
+  *------------------------------------*/
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--first.form-row-first {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--first.form-row-first {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--first.form-row-first {
+    width: 46%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--first.form-row-first {
+    width: 46%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--last.form-row-last {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--last.form-row-last {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--last.form-row-last {
+    width: 46%;
+    float: right;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--last.form-row-last {
+    width: 46%;
+    float: right;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row label {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  flex-direction: row;
+  font-size: 13px;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--wide.form-row-wide input.woocommerce-Input {
+  width: 96%;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--wide.form-row-wide span {
+  font-size: 10px;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--wide.form-row-wide {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--wide.form-row-wide {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--wide.form-row-wide {
+    width: 46%;
+    float: left;
+    height: 122px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm .woocommerce-form-row.form-row.woocommerce-form-row--wide.form-row-wide {
+    width: 46%;
+    float: left;
+    height: 122px;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 4px;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset legend {
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset p.woocommerce-form-row.woocommerce-form-row--wide.form-row.form-row-wide {
+  padding: 4px;
+  width: 96%;
+  margin-left: 4%;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset input[type=checkbox] {
+  background-color: transparent;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset {
+    width: 46%;
+    float: right;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset {
+    width: 46%;
+    float: right;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location {
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location label {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  flex-direction: row;
+  font-size: 13px;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location select {
+  height: 38px;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location {
+    width: 46%;
+    clear: both;
+    float: right;
+    margin-top: -578px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location {
+    width: 46%;
+    clear: both;
+    float: right;
+    margin-top: -578px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.woocommerce_edit_account_form.aw-location {
+    width: 46%;
+    clear: both;
+    float: right;
+    margin-top: -578px;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers h3.aw-custom-phone-numbers {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  flex-direction: row;
+  font-size: 13px;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account {
+  border: 1px solid #ddd;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody {
+  border: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr {
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-top: 0;
+  padding-bottom: 0;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr:nth-child(1) {
+  border-top: 1px solid #ddd;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-top: 0;
+  padding-bottom: 0;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td {
+  border-top: 0;
+  border-bottom: 0;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row th {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 0;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.country-select {
+  padding-left: 4px;
+  max-width: 100px;
+  min-width: 60px;
+  border-top: 0;
+  border-bottom: 0;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.country-select span {
+  border: 0;
+  max-width: 60px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.country-select label {
+  font-size: 10px;
+  font-weight: 100;
+  display: block;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.country-select .ui-selectmenu-button.ui-widget {
+  min-width: 60px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.phone-number-input {
+  border-top: 0;
+  border-bottom: 0;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.phone-number-input label.phone-name-header {
+  width: 100%;
+  min-width: 400px;
+  border-bottom: 0;
+  padding-left: 4px;
+  font-weight: 200;
+  width: 100%;
+  min-width: 100px;
+  font-size: 13px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.phone-number-input input.phone-number.woocommerce-Input {
+  width: 100%;
+  min-width: 200px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.phone-number-input div.phone-err-msg {
+  font-size: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.phone-number-input div.phone-err-msg.hidden {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.phone-number-input div.phone-err-msg.shown {
+  display: block;
+  color: #801747;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.work_ext input#work_ext {
+  min-width: 25px;
+  max-width: 30px;
+  width: 50%;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.work_ext label {
+  font-weight: 100;
+  font-size: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.blank {
+  max-width: 1px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.primary-phone {
+  border-top: 0;
+  border-bottom: 0;
+  padding-right: 4px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row td.primary-phone label {
+  font-size: 10px;
+  font-weight: 100;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers table.edit-account tbody tr.woocommerce-form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers {
+    width: 46%;
+    float: left;
+    clear: left;
+    margin-top: -329px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm fieldset.woocommerce_edit_account_form.aw-custom-phone-numbers {
+    width: 46%;
+    float: left;
+    clear: left;
+    margin-top: -329px;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences {
+  padding: 2px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences {
+  background-color: #F2F2F2;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences h3 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences .preference-checkbox {
+  padding-left: 12px;
+  padding-top: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences .preference-checkbox label {
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: none;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences .preference-checkbox input {
+  padding-right: 2px;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences {
+    width: 46%;
+    clear: both;
+    float: right;
+    margin-top: 36px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences {
+    width: 46%;
+    clear: both;
+    float: right;
+    margin-top: 36px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-email-preferences fieldset.woocommerce_edit_account_form.aw-email-preferences {
+    width: 46%;
+    clear: both;
+    float: right;
+    margin-top: 36px;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications {
+  margin-top: 0px;
+  padding: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications {
+  background-color: #F2F2F2;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications h3 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-family: "AvenirNext", Sans-serif;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications .notification-checkbox {
+  padding-left: 12px;
+  padding-top: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications .notification-checkbox h5, .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications .notification-checkbox label {
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: none;
+  padding-right: 24px;
+  padding-left: 4px;
+  padding-bottom: 2px;
+  font-family: "AvenirNext", Sans-serif;
+  margin-bottom: 3px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications .notification-checkbox input {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications {
+    width: 46%;
+    clear: left;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-account-notifications fieldset.woocommerce_edit_account_form.aw-account-notifications {
+    width: 46%;
+    clear: left;
+    float: left;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions {
+  margin-top: 0px;
+  padding: 10px;
+  clear: both;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions {
+  border: 0;
+  float: left;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions .condition-item {
+  display: block;
+  clear: both;
+  padding-top: 2px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions .condition-item input[type=checkbox] {
+  height: 10px;
+  width: 10px;
+  min-width: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions .condition-item p {
+  font-weight: 100;
+  font-size: 10px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions {
+    width: 46%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm #aw-conditions fieldset.woocommerce_edit_account_form.aw-conditions {
+    width: 46%;
+    float: left;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content form.woocommerce-EditAccountForm button.woocommerce-Button.button {
+  bottom: 0;
+  clear: both;
+  float: right;
+}
+
+.appraisal-submit-button-account-settings {
+  display: block;
+  clear: both;
+  float: left;
+  margin-top: 10px;
+}
+.appraisal-submit-button-account-settings #appraisal-submit-button {
+  font-size: 14px;
+}
+.appraisal-submit-button-account-settings .wpcf7-file, .appraisal-submit-button-account-settings input {
+  border: 0;
+}
+.appraisal-submit-button-account-settings #appraisal-submit-form {
+  font-size: 14px;
+  display: none;
+}
+
+/*------------------------------------*
+	MY ACCOUNT
+*------------------------------------*/
+.woocommerce .woocommerce-MyAccount-content {
+  font-size: 12px;
+  /*------------------------------------*
+  	FILTERS
+  *------------------------------------*/
+}
+.woocommerce .woocommerce-MyAccount-content #filtered-content {
+  font-size: 12px;
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content h1 {
+  text-align: left;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root .dataTables_length {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root .dataTables_filter {
+  font-size: 13px;
+  margin-bottom: 1em;
+  margin-top: -32px;
+  margin-right: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root .dataTables_filter input {
+  max-height: 30px;
+  height: 30px;
+  border: 1px solid #EDEDED;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root .dataTables_filter label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table {
+  font-size: 12px;
+  color: #000;
+  width: 100%;
+  border-width: 0;
+  border-right: 0px;
+  border-left: 0px;
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table thead {
+  background-color: #FFF;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table thead tr {
+  border-bottom: 1px solid #000;
+  border-right: 0px;
+  border-left: 0px;
+  vertical-align: middle;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table thead tr th {
+  font-size: 13px;
+  font-weight: 100;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  vertical-align: bottom;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td {
+  vertical-align: middle;
+  border: 0;
+  border-color: #FFF;
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td span {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td a.aw-button {
+  min-width: 100px;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td:nth-child(1) {
+  max-width: 75px;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td:nth-child(3) a, .woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td:nth-child(4) a {
+  color: #000;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td:nth-child(2) {
+  text-align: center;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td:nth-child(4) {
+  text-align: right;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-vue-root table#aw-purchase-history-table tbody tr td:nth-child(5) {
+  text-align: center;
+}
+.woocommerce .woocommerce-MyAccount-content i.fa.fa-spinner.fa-spin {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+.woocommerce .woocommerce-MyAccount-content i.fa.fa-spinner.fa-spin.show {
+  display: inline;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-purchase-history-table_filter label input {
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+.woocommerce .woocommerce-MyAccount-content .aw-amount {
+  color: #03930f;
+}
+.woocommerce .woocommerce-MyAccount-content h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section {
+  margin: 0 auto;
+  border: 0;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  font-size: 13px;
+  height: 32px;
+  clear: both;
+  margin: 0 auto;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section label {
+  padding-right: 6px;
+  padding-left: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section select {
+  width: auto;
+  max-width: 150px;
+  min-width: 86px;
+  border: 1px solid #EDEDED;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates {
+  width: 50%;
+  display: inline-block;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 2%;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates label:nth-child(1) {
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates label:nth-child(1) {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates label:nth-child(1) {
+    margin-left: 12%;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates label:nth-child(1) {
+    margin-left: 15%;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-dates input {
+  color: #212121;
+  text-align: center;
+  font-size: 13px;
+  max-height: 30px;
+  width: 100px;
+  margin-left: 6px;
+  height: 30px;
+  border: 1px solid #EDEDED;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section .aw-type label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section:after {
+  margin-bottom: 15px;
+  clear: both;
+  height: 15px;
+  display: block;
+  float: none;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section {
+    margin-bottom: 76px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section {
+    margin-bottom: 76px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #purchase-history-filters-section {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content {
+    width: 80%;
+  }
+}
+
+.woocommerce .woocommerce-MyAccount-content {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #filtered-content {
+  font-size: 12px;
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content h1 {
+  text-align: left;
+  font-size: 14px;
+  color: #801747;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper {
+  font-size: 12px;
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_filter,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_filter {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: -40px;
+  z-index: 1;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_filter table,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_filter table {
+  border-width: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_filter label,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_filter label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_filter input,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_filter input {
+  min-height: 30px;
+  height: 30px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper table,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper table {
+  font-size: 12px;
+  border-width: 0;
+  border-right: 0px;
+  border-left: 0px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper table th,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper table th {
+  font-size: 12px;
+  font-weight: 100;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper table td,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper table td {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper table td span,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper table td span {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll {
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead {
+  background-color: #FFF;
+  border-bottom: 1px solid #000;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr {
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid #000;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th {
+  font-size: 12px;
+  font-weight: 100;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.aw-wine-button,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.aw-wine-button {
+  width: 25px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+  border-bottom: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table tbody tr td,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table tbody tr td {
+  border-color: #FFF;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table tbody tr td:last-child,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table tbody tr td:last-child {
+  text-align: center;
+  margin: 0 auto;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper .dataTables_info,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper .dataTables_info {
+  float: right;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th,
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td, .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th,
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td {
+  padding: 8px 16px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(1),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(1), .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(1),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(1),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(1),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(1),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(1),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(1) {
+  min-width: 60px;
+  max-width: 70px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(2), .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(2) {
+  min-width: 68px;
+  max-width: 75px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(3),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(3), .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(3),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(3),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(3),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(3),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(3),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(3) {
+  min-width: 75px;
+  max-width: 80px;
+  text-align: center;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(3) a,
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(3) a, .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(3) a,
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(3) a,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(3) a,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(3) a,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(3) a,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(3) a {
+  color: #000;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(4),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(4), .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(4),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(4),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(4),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(4),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(4),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(4) {
+  max-width: 16px;
+}
+<<<<<<< HEAD
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(5),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(5), .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(5),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(5),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(5),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(5),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(5),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(5) {
+  max-width: 24px;
+}
+=======
+>>>>>>> 3aaa8bcbaba99060b6fd0f2ba942acd8df7bf8c3
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(7),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(7), .woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(7),
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(7),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper thead tr th:nth-child(7),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-my-wines-table_wrapper tbody tr td:nth-child(7),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper thead tr th:nth-child(7),
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table .dataTables_wrapper#aw-appraisal-table_wrapper tbody tr td:nth-child(7) {
+  min-width: 50px;
+  max-width: 200px;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts {
+  display: none;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #f7f7f7;
+  background: #f7f7f7;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format {
+  display: block;
+  background-color: #f7f7f7;
+  background: #f7f7f7;
+  border: 1px solid #CCC;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format {
+    width: 100%;
+    min-width: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format {
+    width: 100%;
+    min-width: 386px;
+    max-height: 500px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format {
+    width: 48%;
+    min-width: 386px;
+    max-height: 500px;
+  }
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format:nth-child(2) {
+    clear: right;
+  }
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region:nth-child(odd),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage:nth-child(odd),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer:nth-child(odd),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format:nth-child(odd) {
+    clear: left;
+    float: left;
+  }
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region:nth-child(even),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage:nth-child(even),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer:nth-child(even),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format:nth-child(even) {
+    clear: right;
+    float: right;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer,
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format {
+    width: 49%;
+    min-width: 400px;
+    max-height: 500px;
+  }
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer:nth-child(2),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format:nth-child(2) {
+    clear: right;
+  }
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region:nth-child(odd),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage:nth-child(odd),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer:nth-child(odd),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format:nth-child(odd) {
+    clear: left;
+    float: left;
+  }
+  .woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-region:nth-child(even),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-vintage:nth-child(even),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-producer:nth-child(even),
+.woocommerce .woocommerce-MyAccount-content #my-wines-charts #my-wines-chart-format:nth-child(even) {
+    clear: right;
+    float: right;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-vue-root {
+  clear: both;
+  display: block;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section {
+  margin: 0 auto;
+  border: 0;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  position: relative;
+  /* margin-bottom: -4px; */
+  font-size: 14px;
+  height: 25px;
+  clear: both;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type {
+  font-size: 13px;
+  flex-wrap: nowrap;
+  float: left;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type label {
+  font-weight: 600;
+  padding-right: 4px;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type select {
+  min-width: 90px;
+  max-width: 100px;
+  height: 30px;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type {
+    width: 20%;
+  }
+  .woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type select {
+    min-width: 80px;
+    max-width: 96px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type {
+    width: 18%;
+  }
+  .woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type select {
+    min-width: 80px;
+    max-width: 96px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type {
+    width: 16%;
+  }
+  .woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section .aw-type select {
+    min-width: 80px;
+    max-width: 96px;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content #aw-mywines-filters-section button#clear-filters {
+  flex-wrap: nowrap;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table {
+  margin-top: 20px;
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper.dataTables_wrapper {
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table .dataTables_length,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper .dataTables_length,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper.dataTables_wrapper .dataTables_length {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table .dataTables_info,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper .dataTables_info,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper.dataTables_wrapper .dataTables_info {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table .dataTables_scroll .dataTables_scrollHead,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollHead,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper.dataTables_wrapper .dataTables_scroll .dataTables_scrollHead {
+  display: inline;
+  font-weight: 100;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table .dataTables_scroll .dataTables_wrapper td,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper .dataTables_scroll .dataTables_wrapper td,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper.dataTables_wrapper .dataTables_scroll .dataTables_wrapper td {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table .dataTables_scroll .dataTables_wrapper td:last-child,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper .dataTables_scroll .dataTables_wrapper td:last-child,
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table #aw-appraisal-table_wrapper.dataTables_wrapper .dataTables_scroll .dataTables_wrapper td:last-child {
+  text-align: center;
+  margin: 0 auto;
+}
+.woocommerce .woocommerce-MyAccount-content #my-wines-appraisal-table h5 {
+  color: #801747;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content {
+  margin: 0 auto;
+  z-index: 20000;
+  position: relative;
+  background-color: #FFF;
+  width: 80%;
+  max-width: 1000px;
+  min-width: 600px;
+  top: 320px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-header {
+  background-color: #000;
+  color: #FFF;
+  display: block;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-header h1 {
+  color: #FFF;
+  text-align: left;
+  padding: 12px;
+  margin-left: 25px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-header .lightbox-close {
+  float: right;
+  display: inline;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-header .lightbox-close button {
+  background-color: #000;
+  border-radius: 50%;
+  color: #FFF;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-header .lightbox-close button:hover {
+  color: #801747;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-header .lightbox-close button i {
+  font-size: 18px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 6px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table thead {
+  border-bottom: 1px solid #000;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table tbody {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table tbody tr td {
+  border-bottom: 0;
+  max-width: 150px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table tbody tr td:nth-child(1) {
+  max-width: 50px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table tbody tr td:nth-child(2) {
+  max-width: 50px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table tbody tr td:nth-child(3) {
+  max-width: 50px;
+}
+.woocommerce .woocommerce-MyAccount-content #add-to-appraisal-lightbox .appraisal-lightbox-content .appraisal-lightbox-body table tbody tr td input {
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-mywines-appraisal-builder.aw-appraisal-builder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #EDEDED;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-mywines-appraisal-builder.aw-appraisal-builder h1 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-mywines-appraisal-builder.aw-appraisal-builder span.aw-selected {
+  margin-top: 7px;
+  text-align: left;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-mywines-appraisal-builder.aw-appraisal-builder table {
+  display: flex;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-mywines-appraisal-builder.aw-appraisal-builder button.aw-review-button {
+  width: 36%;
+  flex-grow: 3;
+  margin: 0 auto;
+  float: right;
+  text-align: right;
+  padding-right: 10px;
+  display: inline;
+  background-color: #EDEDED;
+  font-size: 14px;
+  color: #801747;
+  margin-left: 175px;
+}
+.woocommerce .woocommerce-MyAccount-content #show-appraisal-lightbox-button {
+  float: right;
+  font-size: 14px;
+  font-weight: 500;
+  height: 46px;
+}
+.woocommerce .woocommerce-MyAccount-content #show-appraisal-lightbox-button i {
+  color: #000;
+  font-weight: 150;
+  font-size: 16px;
+  line-height: 14px;
+}
+.woocommerce .woocommerce-MyAccount-content #submit-appraisal-form {
+  font-size: 14px;
+  font-weight: 500;
+  height: 46px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #submit-appraisal-form {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce .woocommerce-MyAccount-content #submit-appraisal-form {
+    margin-top: -42px;
+  }
+}
+.woocommerce .woocommerce-MyAccount-content #appraisalLoading {
+  max-width: 150px;
+  max-height: 36px;
+  float: none;
+  margin: 0 auto;
+  margin-top: -42px;
+  padding-right: 10px;
+  text-align: center;
+}
+.woocommerce .woocommerce-MyAccount-content #appraisalLoading svg {
+  fill: #000;
+  width: 25px;
+  height: 25px;
+}
+
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address {
+  margin-bottom: 30px;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box {
+  width: 100%;
+  max-width: 960px;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 960px;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping {
+  flex-direction: row;
+  width: 100%;
+  max-width: 960px;
+  min-width: 800px;
+  font-size: 14px;
+}
+@media only screen and (max-width: 980px) {
+  .th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping {
+    max-width: 768px;
+    min-width: 768px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping {
+    max-width: 980px;
+    min-width: 980px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping {
+    max-width: 960px;
+    min-width: 900px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping {
+    max-width: 960px;
+    min-width: 900px;
+  }
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box {
+  border: 0;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box:hover {
+  box-shadow: 0;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-main-content {
+  padding-bottom: 0;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-main-content .complete-aaddress {
+  float: left;
+  min-height: 150px;
+  min-width: 600px;
+  flex-direction: column;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-main-content .complete-aaddress .address-type-wrapper.row {
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-main-content .btn-continue.address-wrapper {
+  margin-top: calc(110px / 2);
+  float: right;
+  flex-direction: column;
+  max-width: 400px;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-main-content .btn-continue.address-wrapper form button {
+  flex-direction: row;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-main-content .btn-continue.address-wrapper form input {
+  flex-direction: row;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-acnt-adr-footer.acnt-address-footer {
+  vertical-align: middle;
+  float: right;
+  flex-direction: column;
+  border: 0;
+  border-top: 0;
+  width: 165px;
+  flex-wrap: wrap;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-acnt-adr-footer.acnt-address-footer .btn-acnt-edit {
+  flex-direction: row;
+  display: inline-block;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-acnt-adr-footer.acnt-address-footer .btn-acnt-edit a {
+  color: #000;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping .thwma-adr-box.address-box .thwma-acnt-adr-footer.acnt-address-footer form button.thwma-del-acnt.th-del-acnt {
+  flex-direction: row;
+  display: inline-block;
+  float: right;
+  color: red;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .thwma-thslider-box ul#thwma-th-list li.thwma-thslider-item.shipping:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+.th-custom.thwma_my_acnt.thwma_oceanwp_acnt .thwma-acnt-cus-addr.th-custom-address .add-acnt-adrs.thwma-add-acnt-adrs {
+  display: none;
+}
+
+.woocommerce .woocommerce-MyAccount-content {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #filtered-content {
+  font-size: 12px;
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content h1 {
+  text-align: left;
+}
+.woocommerce .woocommerce-MyAccount-content .dataTables_length {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table thead,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper thead,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table thead,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper thead,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables thead {
+  font-size: 13px;
+  padding-bottom: 2px;
+  background-color: #FFF;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table thead .sorting_desc,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table thead .sorting,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table thead .sorting_asc,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper thead .sorting_desc,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper thead .sorting,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper thead .sorting_asc,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table thead .sorting_desc,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table thead .sorting,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table thead .sorting_asc,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper thead .sorting_desc,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper thead .sorting,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper thead .sorting_asc,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables thead .sorting_desc,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables thead .sorting,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables thead .sorting_asc {
+  background-size: 16px;
+  background-position: center right;
+  background-clip: border-box;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table thead tr,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper thead tr,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table thead tr,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper thead tr,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables thead tr {
+  border-bottom: 1px solid #212121;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table thead tr th,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper thead tr th,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table thead tr th,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper thead tr th,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables thead tr th {
+  font-size: 13px;
+  font-weight: 100;
+  border: 0;
+  border-bottom: 1px solid #212121;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table tbody tr,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper tbody tr,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table tbody tr,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper tbody tr,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables tbody tr {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table tbody tr td,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper tbody tr td,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table tbody tr td,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper tbody tr td,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables tbody tr td {
+  border-color: #FFF;
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table tbody tr td span,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper tbody tr td span,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table tbody tr td span,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper tbody tr td span,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables tbody tr td span {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table tbody tr td li,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper tbody tr td li,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table tbody tr td li,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper tbody tr td li,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables tbody tr td li {
+  list-style: none;
+}
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table .dataTables_length,
+.woocommerce .woocommerce-MyAccount-content table#aw-wishlist-table_wrapper .dataTables_length,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table .dataTables_length,
+.woocommerce .woocommerce-MyAccount-content table#aw-favorites-table_wrapper .dataTables_length,
+.woocommerce .woocommerce-MyAccount-content table.aw-datatables .dataTables_length {
+  display: none;
+}
+
+i.aw-template-switch-button {
+  clear: both;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  font-size: 13px;
+  border: 1px solid #801747;
+  color: #801747;
+  background-color: #FFF;
+}
+i.aw-template-switch-button:hover {
+  background-color: #eee;
+}
+i.aw-template-switch-button.active {
+  color: #FFF;
+  background-color: #801747;
+}
+i.aw-template-switch-button.active:hover {
+  border: 2px solid #801747;
+  background-color: #801747;
+}
+
+a.aw-add-to-cart-checkbox.button {
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  border-color: #EDEDED;
+  width: 15px;
+  height: 15px;
+}
+a.aw-add-to-cart-checkbox.button i {
+  height: 20px;
+  width: 20px;
+  background-color: #EDEDED;
+  border-color: #EDEDED;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+a.aw-add-to-cart-checkbox.button i:hover {
+  background-color: #801747;
+  color: #EDEDED;
+  border-color: #801747;
+}
+a.aw-add-to-cart-checkbox.button:hover {
+  background-color: #801747;
+  color: #EDEDED;
+  border-color: #801747;
+}
+
+#aw-account-items-container {
+  margin-top: 10px;
+}
+
+#fitler-buttons {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  clear: both;
+}
+#fitler-buttons .facetwp-facet {
+  letter-spacing: 0;
+  font-size: 12px;
+  flex-wrap: nowrap;
+  display: inline;
+  flex-wrap: nowrap;
+  display: inline;
+}
+#fitler-buttons .facetwp-facet .fs-wrap {
+  width: 150px;
+}
+#fitler-buttons .facetwp-facet .fs-wrap .fs-label {
+  letter-spacing: 0;
+  font-size: 12px;
+}
+
+.aw-loading-screen-overlay {
+  background: transparent;
+  background-size: 16px 16px;
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+}
+
+/*------------------------------------*
+	FAVORITES
+*------------------------------------*/
+form#tinvwl-favorites-form {
+  display: none;
+}
+
+/*------------------------------------*
+	WISHLIST
+*------------------------------------*/
+button.aw-remove-from-wishlist i.fa.fa-times-circle:before {
+  width: 24px;
+  height: 24px;
+}
+
+form#yith-wcwl-form {
+  display: none;
+}
+
+/*------------------------------------*
+	Datatable View
+*------------------------------------*/
+.dataTables_scroll .button {
+  padding: 8px 6px;
+  font-size: 10px;
+}
+
+/*------------------------------------*
+	THUMBIEW
+*------------------------------------*/
+#aw-account-items-container .woocommerce.columns-4 .products button.aw-remove-from-wishlist {
+  float: right;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  z-index: 960;
+}
+#aw-account-items-container .woocommerce.columns-4 .products li.product:nth-child(4n) {
+  clear: right;
+  float: left;
+}
+#aw-account-items-container .woocommerce.columns-4 .products li.product:nth-child(5n) {
+  clear: left;
+  float: left;
+}
+
+/*------------------------------------*
+	MY ACCOUNT
+*------------------------------------*/
+.woocommerce .woocommerce-MyAccount-content {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content h1.aw-page-title {
+  color: #212121;
+  font-size: 16px;
+}
+.woocommerce .woocommerce-MyAccount-content #filtered-content {
+  font-size: 12px;
+  width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-content h1 {
+  text-align: left;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper {
+  font-size: 12px;
+  color: #000;
+  width: 100%;
+  border-width: 0;
+  border-right: 0px;
+  border-left: 0px;
+  border: 0;
+  margin-top: 5px;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper:after {
+  margin-bottom: 25px;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTables_filter {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTables_length {
+  display: none;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable thead {
+  background-color: #FFF;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable thead tr {
+  border-right: 0px;
+  border-left: 0px;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable thead tr th {
+  padding: 8px 16px;
+  font-weight: 100;
+  font-size: 13px;
+  font-weight: 100;
+  border-bottom: 1px solid #777;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr {
+  border: 0;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr td {
+  vertical-align: middle;
+  padding: 3px;
+  border-color: #FFF;
+  font-size: 12px;
+  border-bottom: 0px;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr td span {
+  font-size: 12px;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr td.aw-center {
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr td.aw-right {
+  text-align: right;
+  align-self: right;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr td:last-child {
+  text-align: center;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper .dataTable tbody tr.even {
+  background-color: #FFF;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper button.aw-appraisal {
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+.woocommerce .woocommerce-MyAccount-content #aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-auction .dataTables_wrapper input[type=checkbox] {
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+#aw-account-myauctions-bid-history-onetable_wrapper .dataTables_filter {
+  display: none;
+}
+#aw-account-myauctions-bid-history-onetable_wrapper .dataTables_length {
+  display: none;
+}
+
+#aw-account-myauctions-bid-history-vue-root {
+  display: none;
+}
+#aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction button h1.aw-year {
+  font-size: 16px;
+}
+#aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin: 0;
+  padding: 0;
+  color: #801747;
+  font-weight: 200;
+}
+#aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction h2 span.aw-saledate {
+  font-size: 16px;
+  color: #801747;
+}
+#aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction h1.aw-year {
+  font-size: 20px;
+}
+#aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction h1.aw-year i {
+  fill: #801747;
+  color: #801747;
+  font-size: 14px;
+  padding-left: 6px;
+}
+#aw-account-myauctions-bid-history-vue-root .aw-bidhistory-auction .aw-year-buttons {
+  background-color: #FFF;
+  border: 0;
+}
+
+.aw-bidhistory-filters {
+  margin: 0 auto;
+  padding-top: 20px;
+  border: 0;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: 0;
+  vertical-align: top;
+}
+.aw-bidhistory-filters .aw-result {
+  font-size: 13px;
+  flex-wrap: nowrap;
+}
+.aw-bidhistory-filters .aw-result label {
+  font-weight: 600;
+  padding-right: 4px;
+}
+.aw-bidhistory-filters .aw-result select {
+  min-width: 90px;
+  max-width: 100px;
+  height: 30px;
+}
+@media only screen and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-result {
+    width: 10%;
+  }
+  .aw-bidhistory-filters .aw-result select {
+    min-width: 80px;
+    max-width: 96px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-result {
+    width: 10%;
+  }
+  .aw-bidhistory-filters .aw-result select {
+    min-width: 80px;
+    max-width: 96px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-result {
+    width: 16%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .aw-bidhistory-filters .aw-result {
+    width: 16%;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .aw-bidhistory-filters .aw-result {
+    width: 16%;
+  }
+}
+.aw-bidhistory-filters .aw-dates {
+  font-size: 13px;
+  float: right;
+  text-align: right;
+  width: 32%;
+  flex-grow: 3;
+  margin-left: 0;
+  padding-left: 8px;
+  vertical-align: top;
+}
+.aw-bidhistory-filters .aw-dates form input[type=text] {
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+}
+.aw-bidhistory-filters .aw-dates form {
+  vertical-align: top;
+}
+.aw-bidhistory-filters .aw-dates form label {
+  padding-left: 10px;
+  padding-right: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  top: 12px;
+}
+.aw-bidhistory-filters .aw-dates form button {
+  margin-left: 10px;
+}
+.aw-bidhistory-filters .aw-dates form input {
+  min-width: 100px;
+  max-width: 120px;
+  padding-left: 8px;
+  font-size: 13px;
+  padding: 0;
+}
+.aw-bidhistory-filters .aw-dates form input#bidhistory-filter-dates-from {
+  font-size: 13px;
+}
+.aw-bidhistory-filters .aw-dates form input#bidhistory-filter-dates-from.hasDatepicker {
+  text-align: center;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  font-size: 13px;
+}
+.aw-bidhistory-filters .aw-dates form input#bidhistory-filter-dates-to {
+  font-size: 13px;
+}
+.aw-bidhistory-filters .aw-dates form input#bidhistory-filter-dates-to.hasDatepicker {
+  text-align: center;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  font-size: 13px;
+}
+@media only screen and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-dates form input {
+    min-width: 88px;
+    max-width: 88px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-dates form input {
+    min-width: 88px;
+    max-width: 100px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .aw-bidhistory-filters .aw-dates form input {
+    min-width: 100px;
+    max-width: 120px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .aw-bidhistory-filters .aw-dates form input {
+    min-width: 100px;
+    max-width: 120px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .aw-bidhistory-filters .aw-dates form {
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .aw-bidhistory-filters .aw-dates form {
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-dates {
+    width: 16%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-dates {
+    width: 26%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .aw-bidhistory-filters .aw-dates {
+    width: 36%;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .aw-bidhistory-filters .aw-dates {
+    width: 36%;
+    height: 32px;
+  }
+}
+.aw-bidhistory-filters .aw-search {
+  font-size: 13px;
+  clear: both;
+  width: 33%;
+  float: right;
+  text-align: right;
+  align-self: flex-end;
+  margin-bottom: 8px;
+}
+.aw-bidhistory-filters .aw-search label {
+  font-weight: 600;
+  font-size: 13px;
+}
+.aw-bidhistory-filters .aw-search input {
+  height: 30px;
+  max-height: 30px;
+  text-align: left;
+  padding-left: 2px;
+}
+@media only screen and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-search input {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-search input {
+    width: 160px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .aw-bidhistory-filters .aw-search input {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .aw-bidhistory-filters .aw-search input {
+    width: 250px;
+  }
+}
+.aw-bidhistory-filters .aw-search span {
+  color: #545454;
+}
+.aw-bidhistory-filters .aw-search #aw-search-filter-info {
+  display: block;
+  font-size: 12px;
+  color: #545454;
+}
+@media only screen and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-search {
+    width: 24%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .aw-bidhistory-filters .aw-search {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  .aw-bidhistory-filters .aw-search {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .aw-bidhistory-filters .aw-search {
+    width: 33%;
+  }
+}
+
+#aw-account-bidhistory-appraisal-builder.aw-appraisal-builder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #EDEDED;
+  margin-top: 2px;
+  text-align: left;
+}
+#aw-account-bidhistory-appraisal-builder.aw-appraisal-builder h1 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+#aw-account-bidhistory-appraisal-builder.aw-appraisal-builder span.aw-selected {
+  margin-top: 7px;
+  text-align: left;
+}
+#aw-account-bidhistory-appraisal-builder.aw-appraisal-builder button.aw-review-button {
+  background-color: #EDEDED;
+  width: 36%;
+  flex-grow: 3;
+  margin: 0 auto;
+  float: right;
+  text-align: right;
+  padding-right: 10px;
+  display: inline;
+  font-size: 14px;
+  color: #801747;
+  margin-left: 175px;
+}
+
+div#aw-account-bidhistory-appraisal {
+  background-color: #FAFAFA;
+  display: none;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table {
+  width: 100%;
+  clear: both;
+  padding: 0 6px;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table h5 {
+  font-family: Avenir Book;
+  letter-spacing: 1.5px;
+  font-size: 1.12em;
+  padding: 6px 6px;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: 600;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table h5:first-child {
+  padding-top: 12px;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table {
+  background: transparent;
+  clear: both;
+  border: 0;
+  margin-bottom: 0;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table .dataTables_empty {
+  border-bottom: 0;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table .dataTables_scrollHead {
+  background: transparent;
+  width: 100%;
+  color: #212121;
+  font-weight: 100;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table .dataTables_scrollBody {
+  background: transparent;
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table .dataTables_info {
+  display: none;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table {
+  border: 0;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table input {
+  margin: 0 auto;
+  text-align: center;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table tr td {
+  border-bottom: 0;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table tr .dataTables_info {
+  display: none;
+}
+@media only screen and (max-width: 980px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table th {
+    max-width: 20px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td input {
+    max-widtH: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table th {
+    max-width: 88px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td input {
+    max-widtH: 88px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table th {
+    max-width: 100px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td input {
+    max-widtH: 100px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table th {
+    max-width: 150px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table td input {
+    max-widtH: 150px;
+  }
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-addto-appraisal-table button.aw-addto-appraisal-table-submit {
+  float: right;
+  margin-right: 4px;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper {
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 0;
+  background-color: #FAFAFA;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead {
+  width: 100%;
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead {
+    min-width: 1100px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead {
+    min-width: 1100px;
+  }
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead th {
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #777;
+  font-weight: 100;
+  font-size: 12px;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper td {
+  background-color: #FAFAFA;
+  border: 0;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_length,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_length {
+  display: none;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td {
+  background-color: #FAFAFA;
+  font-weight: 100;
+  min-width: 60px;
+}
+@media only screen and (max-width: 980px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td {
+    min-width: 50px;
+    max-width: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td {
+    min-width: 60px;
+    max-width: 80px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1168px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td {
+    min-width: 80px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:first-child, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:first-child {
+    max-width: 120px;
+    min-width: 100px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(2), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(3), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(4), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(2), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(3), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(4) {
+    max-width: 50px;
+    min-width: 40px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(5), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(5) {
+    min-width: 150px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td {
+    min-width: 84px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:first-child, div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:first-child,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:first-child {
+    max-width: 120px;
+    min-width: 100px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(2), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(3), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(4), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(2), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(3), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(4),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(2),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(3),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(4) {
+    max-width: 50px;
+    min-width: 40px;
+  }
+  div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table thead tr th:nth-child(5), div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table tbody tr td:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper thead tr th:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper tbody tr td:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scrollHead .dataTables_scrollHeadInner thead tr th:nth-child(5),
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_scroll .dataTables_scrollBody tbody tr td:nth-child(5) {
+    min-width: 200px;
+  }
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table .dataTables_info,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper .dataTables_info {
+  display: none;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table div.aw-button-container,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper div.aw-button-container {
+  width: 100%;
+  border-bottom: 1px solid #DDD;
+  display: none;
+  height: 42px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table div.aw-button-container #appraisalLoading,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper div.aw-button-container #appraisalLoading {
+  max-width: 150px;
+  max-height: 36px;
+  float: right;
+  margin: 0 auto;
+  margin-top: 0px;
+  padding-right: 10px;
+  text-align: center;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table div.aw-button-container #appraisalLoading svg,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper div.aw-button-container #appraisalLoading svg {
+  fill: #000;
+  width: 25px;
+  height: 25px;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table div.aw-button-container button#aw-bidhistory-appraisal-submit-button,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper div.aw-button-container button#aw-bidhistory-appraisal-submit-button {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+div#aw-account-bidhistory-appraisal .aw-appraisal-table table#aw-bidhistory-appraisal-table button.remove-from-appraisal,
+div#aw-account-bidhistory-appraisal .aw-appraisal-table #aw-bidhistory-appraisal-table_wrapper button.remove-from-appraisal {
+  fill: #f6f6f6;
+  background-color: #FAFAFA;
+}
+
+.ui-datepicker.ui-widget .ui-datepicker-header a.ui-datepicker-prev span.ui-icon {
+  background-image: url("/wp-content/mu-plugins/acker-wines-shared/css/images/sort_asc.png");
+  transform: rotate(-90deg);
+  background-position: -1px 2px;
+}
+.ui-datepicker.ui-widget .ui-datepicker-header a.ui-datepicker-next span.ui-icon {
+  background-image: url("/wp-content/mu-plugins/acker-wines-shared/css/images/sort_desc.png");
+  transform: rotate(-90deg);
+  background-position: -1px -4px;
+}
+
+/*# sourceMappingURL=style.css.map */
